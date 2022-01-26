@@ -1,6 +1,6 @@
 <template>
   <div>
-    <lii-tree :data="geographic" :props="defaultProps"></lii-tree>
+    <lii-tree :data="geographic" :props="defaultProps" @node-click="nodeClick(item)"></lii-tree>
   </div>
 </template>
 
@@ -45,6 +45,11 @@ export default {
       }
     };
   },
+  methods:{
+    nodeClick(item){
+      console.log(item);
+    }
+  }
 };
 </script>
 
