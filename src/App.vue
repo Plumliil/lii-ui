@@ -5,6 +5,7 @@
     <router-link to="/button">Button</router-link> |
     <router-link to="/swiper">Swiper</router-link> |
     <router-link to="/tree">Tree</router-link> |
+    <router-link to="/drag">Drag</router-link> |
     <router-link to="/about">About</router-link>
     |
     <router-view />

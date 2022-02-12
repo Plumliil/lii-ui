@@ -6,6 +6,7 @@ import Home from '../views/Home.vue'
 import Button from '../views/Button.vue'
 import Swiper from '../views/Swiper.vue'
 import Tree from '../views/Tree.vue'
+import Drag from '../views/Drag.vue'
 import About from '../views/About.vue'
 
 const routes = [{
@@ -27,6 +28,11 @@ const routes = [{
     path: '/tree',
     name: 'Tree',
     component: Tree
+  },
+  {
+    path: '/drag',
+    name: 'Drag',
+    component: Drag
   },
   {
     path: '/about',
