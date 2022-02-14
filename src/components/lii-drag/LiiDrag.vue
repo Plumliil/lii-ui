@@ -1,71 +1,88 @@
 <template>
-  <div ref="liiDrag" @dragenter.prevent @dragover.prevent>
-    <!-- 阻止浏览器默认行为，不然会显示一个叉叉，不好看 -->
-    <slot />
-    xx
+  <div @dragenter.prevent @dragover.prevent>
+    <div
+      class="drag-item"
+      v-for="(item, index) in newList"
+      :key="index"
+      ref="dragItem"
+      @dragstart.stop="onStart(index)"
+      @dragenter.stop="onEnter(index)"
+      @dragend.stop="onEnd(index)"
+      draggable
+    >
+      {{ item }}
+    </div>
   </div>
 </template>
 
 <script>
-let Emitter = require("tiny-emitter");
-let emitter = new Emitter();
 export default {
-  name: "LiiDrag",
+  name: "Drag",
   created() {
-    this.toDom = ""; // 拖拽时进入的元素
-    this.fromDom = ""; // 拖拽起始元素
-    this.children = []; // 存放所有子组件元素集合
-    emitter.on("dragstart", this.onDragstart); // 先注册后触发
-    emitter.on("dragenter", this.onDragenter); // 先注册后触发
-    emitter.on("dragend", this.onDragend); // 先注册后触发
-    emitter.on("putChild", (child) => {
-      this.children.push(child);
-    }); // 先注册后触发
+    console.log(this.$attrs);
   },
+  emits:['watchData'],
   data() {
     return {
-      nums: [1, 2, 3, 4, 5, 6],
+      newList: this.$attrs.data,
+      dragFrom: null,
+      dragTo: null,
+      isDrag: false,
     };
   },
   methods: {
-    onDragstart(el) {
-      this.fromDom = el;
-      // console.log("onDragstart", index);
-      // console.log(this.$el);
+    onStart(index) {
+      this.dragFrom = index;
+      console.log('onStart');
     },
-    onDragenter(el) {
-      this.toDom=el; // 拖拽会不停出发enter 所以要记录进入哪个元素
-      if(this.fromDom===this.toDom) return;
-      this.isPrevNode()
+    onEnter(index) {
+      this.dragTo = index;
+      this.$refs["dragItem"].forEach((item) => {
+        item.style.opacity = 1;
+        item.style.animation = "";
+      });
+      this.$refs["dragItem"][index].style.opacity = 0.8;
+      this.$refs["dragItem"][index].style.animation = "shake 0.3s";
     },
-    onDragend() {
-      // console.log("onDragend", index);
+    onEnd(index) {
+      console.log("onEnd", index);
+      let temp = this.newList[this.dragTo];
+      this.newList[this.dragTo] = this.newList[this.dragFrom];
+      this.newList[this.dragFrom] = temp;
+      this.$refs["dragItem"][this.dragTo].style.opacity = 1;
+      this.$emit('watchData',this.newList)
     },
-    // 判断to是否在from前
-    isPrevNode(from,to){
-      console.log(from);
-      console.log(to);
-    }
   },
 };
 </script>
-<style lang="less" scoped>
+
+<style scoped>
 div {
-  background-color: aquamarine;
-  height: 300px;
+  background-color: cadetblue;
   display: flex;
   justify-content: center;
   align-items: center;
-  span {
-    display: inline-block;
-    background-color: cadetblue;
-    padding: 50px;
-    margin: 15px;
-    color: white;
-    font-size: 30px;
-    // transform: scale(1.2);
-    transition: 1s;
-    cursor: pointer;
+  height: 120px;
+}
+.drag-item {
+  display: block;
+  background-color: pink;
+  /* padding: 50px; */
+  width: 100px;
+  margin: 3px;
+  cursor: pointer;
+  /* transition: 0.5s; */
+}
+
+@keyframes shake {
+  0% {
+    transform: translate3d(-10%, 0, 0);
+  }
+  50% {
+    transform: translate3d(10%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
   }
 }
-</style>
+</style> 
