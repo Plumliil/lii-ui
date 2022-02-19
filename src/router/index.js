@@ -7,6 +7,7 @@ import Button from '../views/Button.vue'
 import Swiper from '../views/Swiper.vue'
 import Tree from '../views/Tree.vue'
 import Drag from '../views/Drag.vue'
+import Scroll from '../views/Scroll.vue'
 import About from '../views/About.vue'
 
 const routes = [{
@@ -33,6 +34,11 @@ const routes = [{
     path: '/drag',
     name: 'Drag',
     component: Drag
+  },
+  {
+    path: '/scroll',
+    name: 'Scroll',
+    component: Scroll
   },
   {
     path: '/about',
