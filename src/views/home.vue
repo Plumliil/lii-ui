@@ -1,5 +1,17 @@
 <template>
-  <div class="nav">nav</div>
+  <div class="nav">
+    <div class="nav-left">
+      <img src="../assets/logo.png" style="width: 80px; height: 80px" alt="" />
+      <h1>LiiUI</h1>
+    </div>
+    <div class="nav-right">
+      <img
+        src="../assets/github_1.png"
+        style="width: 40px; height: 40px"
+        alt=""
+      />
+    </div>
+  </div>
   <div class="container">
     <div class="left-menu">
       <li
@@ -35,12 +47,27 @@ const switchMenu = (item, index) => {
 <style lang='less' scoped>
 .nav {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  height: 45px;
+  height: 50px;
   line-height: 45px;
-  // background-color: red;
-
   border-bottom: 1px solid #f0f0f0;
+  .nav-left,
+  .nav-right {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+  }
+  .nav-left{
+    justify-content: left;
+    // margin-left: 20px;
+  }
+  .nav-right{
+    justify-content: right;
+    margin-right: 10px;
+  }
 }
 .container {
   width: 1100%;
