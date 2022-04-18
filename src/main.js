@@ -1,11 +1,10 @@
-import {
-    createApp
-} from 'vue'
+import { createApp } from 'vue'
+import LiiUI from '../packages';
 import App from './App.vue'
-import router from './router'
-// import notice from './components/notice/notice'
-// import LiButton from './plugins/LiButton.js'
-// .use(LiButton)
-createApp(App)
-    .use(router)
-    .mount('#app')
+
+const app=createApp(App);
+
+app.use(LiiUI)
+
+
+app.mount('#app')

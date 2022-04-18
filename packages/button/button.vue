@@ -1,12 +1,15 @@
 <template>
-  <button type="button" class="lii-button" :class="liiBtn" @click="click">
-    <span><slot>默认按钮</slot></span>
-  </button>
+  <div>
+    <button type="button" class="lii-button" :class="liiClass">
+      <span><slot>默认按钮</slot></span>
+    </button>
+  </div>
 </template>
 
 <script>
+import { computed } from "vue";
 export default {
-  emits:['click'],
+  name: "liiButton",
   props: {
     type: {
       type: String,
@@ -14,39 +17,30 @@ export default {
         const typeArr = ["primary", "success", "info", "warning", "danger"];
         return typeArr.includes(value);
       },
-    }
-  },
-  computed: {
-    liiBtn() {
-      const liiBtnArr = ["lii-button--" + this.type];
-      if ("size" in this.$attrs) {
-        liiBtnArr.push(this.$attrs.size);
-      }
-      if ("disabled" in this.$attrs) {
-        liiBtnArr.push("is-disabled");
-      }
-      if ("plain" in this.$attrs) {
-        liiBtnArr.push("is-plain");
-      }
-      if ("round" in this.$attrs) {
-        liiBtnArr.push("is-round");
-      }
-      if ("circle" in this.$attrs) {
-        liiBtnArr.push("is-circle");
-      }
-      return liiBtnArr;
     },
   },
-  methods:{
-    click(e){
-      this.$emit('click',e)
-    }
-  }
+  setup(props, { attrs }) {
+    const liiClass = computed(() => {
+      let btnClassArr = ["lii-button--" + props.type];
+      if ("size" in attrs) btnClassArr.push(attrs.size);
+      if ("disabled" in attrs) btnClassArr.push("is-disabled");
+      if ("plain" in attrs) btnClassArr.push("is-plain");
+      if ("round" in attrs) btnClassArr.push("is-round");
+      if ("circle" in attrs) btnClassArr.push("is-circle");
+      return btnClassArr;
+    });
+    return {
+      liiClass,
+    };
+  },
 };
 </script>
 
-<style scoped lang="less">
+<style lang='less' scoped>
 @dftColor: #ffffff;
+div{
+  // display: inline-block;
+}
 .lii-button {
   display: inline-block;
   cursor: pointer;
@@ -259,7 +253,7 @@ export default {
       }
     }
   }
-  & + .lii-button{
+  & + .lii-button {
     // margin-left: 10px;
   }
 }
