@@ -7,14 +7,22 @@
 export default {};
 </script>
 <script setup>
-// import liiButton from "../packages/button/button.vue";
-// import liiInput from "../packages/input/input.vue";
-// const val=
 </script>
 
 
 <style lang="less">
-html,body{
+html,
+body {
   margin: 0;
+  overflow-x: hidden;
+  &::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 5px; /*高宽分别对应横竖滚动条的尺寸*/
+  }
+  &::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 10px;
+    background: black;
+  }
 }
 </style>

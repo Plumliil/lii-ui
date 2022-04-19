@@ -1,12 +1,12 @@
 <template>
   <div class="nav">
     <div class="nav-left">
-      <img src="../assets/logo.png" style="width: 80px; height: 80px" alt="" />
+      <img src="../assets/imgs/logo.png" style="width: 80px; height: 80px" alt="" />
       <h1>LiiUI</h1>
     </div>
     <div class="nav-right">
       <img
-        src="../assets/github_1.png"
+        src="../assets/imgs/github.png"
         style="width: 40px; height: 40px"
         alt=""
       />
@@ -28,7 +28,6 @@
     </div>
   </div>
 </template>
-
 
 <script setup>
 import { ref } from "vue";
@@ -62,7 +61,6 @@ const switchMenu = (item, index) => {
   }
   .nav-left{
     justify-content: left;
-    // margin-left: 20px;
   }
   .nav-right{
     justify-content: right;
@@ -74,7 +72,7 @@ const switchMenu = (item, index) => {
   height: auto;
   display: flex;
   .left-menu {
-    width: 250px;
+    width: 300px;
     height: auto;
     overflow-y: hidden;
     border-right: 1px solid #f0f0f0;
@@ -83,6 +81,8 @@ const switchMenu = (item, index) => {
       line-height: 40px;
       padding: 0 10px;
       cursor: pointer;
+      // text-align: center;
+      text-indent: 10px;
       box-sizing: border-box;
       &.active {
         border-right: 3px solid #0e80eb;
@@ -93,7 +93,8 @@ const switchMenu = (item, index) => {
   }
   .router-view {
     flex: 1;
-    margin-left: ;
+    // margin-left: ;
+    padding-left: 20px;
   }
 }
 </style>

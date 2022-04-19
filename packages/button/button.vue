@@ -1,9 +1,7 @@
 <template>
-  <div>
     <button type="button" class="lii-button" :class="liiClass">
       <span><slot>默认按钮</slot></span>
     </button>
-  </div>
 </template>
 
 <script>
@@ -53,6 +51,7 @@ div{
   transition: 0.1s;
   text-align: center;
   font-size: 14px;
+  margin: 5px;
   &.middle {
     transform: scale(0.9);
   }

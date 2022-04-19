@@ -4,18 +4,18 @@ export default[{
     component:()=>import("../../views/home.vue"),
     children:[
         {
-            path:'info',
+            path:'/',
             name:'简介',
             component:()=>import('../../views/info.vue')
         },
         {
             path:'button',
-            name:'button',
+            name:'Button 按钮',
             component:()=>import('/packages/button/doc/doc.md')
         },
         {
             path:'input',
-            name:'input',
+            name:'Input 输入框',
             component:()=>import('/packages/input/doc/doc.md')
         },
     ]
