@@ -3,7 +3,7 @@
     <div class="pre-code-box">
       <transition name="codeTrans">
         <pre class="langue-html" v-show="showCode">
-            <code>{{ sourceCode }}</code>
+            <code class="html">{{ sourceCode }}</code>
         </pre>
       </transition>
     </div>
@@ -53,7 +53,7 @@ console.log(sourceCode);
 <style lang='less' scoped>
 .container {
   max-width: 823px;
-  margin-bottom: 20px;
+  margin: 20px 0;
   .pre-code-box {
     background-color: @codeBgColor;
   }
@@ -63,7 +63,11 @@ console.log(sourceCode);
     line-height: 45px;
     text-align: center;
     border: @borderBase;
-    // border-top: @borderBase;
+    cursor: pointer;
+    transition: .3s;
+    &:hover{
+      color: #409eff;
+    }
   }
 }
 </style>

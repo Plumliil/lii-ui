@@ -1,5 +1,5 @@
 <template>
-  <div class="container--demo">
+  <div>
     <div>
       <lii-button></lii-button>
       <lii-button type="primary">主要按钮</lii-button>
@@ -36,15 +36,5 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
 import liiButton from "../../button.vue";
 </script>
-
-<style lang='less' scoped>
-.container--demo {
-  border: 1px solid #f0f0f0;
-  padding: 10px;
-  border-radius: 3px;
-  max-width: 800px;
-}
-</style>

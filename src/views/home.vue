@@ -5,11 +5,13 @@
       <h1>LiiUI</h1>
     </div>
     <div class="nav-right">
-      <img
+      <a href="https://github.com/Plumliil/lii-ui">
+        <img
         src="../assets/imgs/github.png"
         style="width: 40px; height: 40px"
         alt=""
       />
+      </a>
     </div>
   </div>
   <div class="container">
@@ -53,7 +55,8 @@ const switchMenu = (item, index) => {
   line-height: 45px;
   border-bottom: 1px solid #f0f0f0;
   .nav-left,
-  .nav-right {
+  .nav-right,
+  a{
     display: flex;
     align-items: center;
     width: 100%;
@@ -62,23 +65,23 @@ const switchMenu = (item, index) => {
   .nav-left{
     justify-content: left;
   }
-  .nav-right{
+  .nav-right,a{
     justify-content: right;
     margin-right: 10px;
   }
 }
 .container {
-  width: 1100%;
+  width: 100%;
   height: auto;
   display: flex;
   .left-menu {
-    width: 300px;
+    width: 350px;
     height: auto;
     overflow-y: hidden;
     border-right: 1px solid #f0f0f0;
     li {
       list-style: none;
-      line-height: 40px;
+      line-height: 45px;
       padding: 0 10px;
       cursor: pointer;
       // text-align: center;
