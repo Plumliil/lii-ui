@@ -14,7 +14,9 @@
     }
   },
   "files": [
-    "dist/*"
+    "dist/lii-ui.es.js",
+    "dist/lii-ui.umd.js",
+    "dist/style.css"
   ],
   "keywords": [
     "vue3",

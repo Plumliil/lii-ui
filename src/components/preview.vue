@@ -62,7 +62,7 @@ const copyCode = (e) => {
   margin: 20px 0;
   .pre-code-box {
     position: relative;
-    background-color: @codeBgColor;
+    background-color: #f0f0f0;
     .copy {
       background-color: white;
       border-radius: 3px;
@@ -87,7 +87,7 @@ const copyCode = (e) => {
     cursor: pointer;
     transition: 0.3s;
     &:hover {
-      color: #409eff;
+      color: @primary;
     }
   }
 }

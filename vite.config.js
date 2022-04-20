@@ -12,6 +12,14 @@ export default defineConfig({
     lib: {
       entry: './packages/index.js',
       name: 'lii-baseui'
+    },
+    rollupOptions:{
+      external:['vue'],
+      output:{
+        globals:{
+          vue:'Vue'
+        }
+      }
     }
   },
   css: {

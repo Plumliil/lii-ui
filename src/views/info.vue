@@ -13,5 +13,8 @@ export default {
 <style lang='less' scoped>
     .container{
         width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 </style>
