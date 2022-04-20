@@ -1,4 +1,4 @@
-## Textarea
+## Textarea 文本域
 
 <script setup>
     import demo from './demo/demo.vue';

@@ -36,5 +36,5 @@
 </template>
 
 <script setup>
-import liiButton from "../../button.vue";
+import liiButton from "../../index.vue";
 </script>

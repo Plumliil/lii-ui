@@ -19,6 +19,11 @@ export default[{
             component:()=>import('/packages/input/doc/doc.md')
         },
         {
+            path:'space',
+            name:'space 间距',
+            component:()=>import('/packages/space/doc/doc.md')
+        },
+        {
             path:'Textarea',
             name:'Textarea 文本域',
             component:()=>import('/packages/textarea/doc/doc.md')

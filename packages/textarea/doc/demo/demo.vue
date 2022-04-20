@@ -16,7 +16,7 @@ export default {};
 
 <script setup>
 import { ref } from "vue";
-import liiTextarea from "../../textarea.vue";
+import liiTextarea from "../../index.vue";
 const val = ref("");
 const setVal = (e) => {
   val.value = e.target.value;

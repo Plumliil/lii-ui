@@ -1,4 +1,4 @@
-import liiTextarea from './textarea.vue'
+import liiTextarea from './index.vue'
 
 liiTextarea.install = app => {
     app.component(liiTextarea.name, liiTextarea)
