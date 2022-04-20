@@ -1,16 +1,20 @@
 <template>
   <div class="nav">
     <div class="nav-left">
-      <img src="../assets/imgs/logo.png" style="width: 80px; height: 80px" alt="" />
+      <img
+        src="../assets/imgs/logo.png"
+        style="width: 80px; height: 80px"
+        alt=""
+      />
       <h1>LiiUI</h1>
     </div>
     <div class="nav-right">
       <a href="https://github.com/Plumliil/lii-ui">
         <img
-        src="../assets/imgs/github.png"
-        style="width: 40px; height: 40px"
-        alt=""
-      />
+          src="../assets/imgs/github.png"
+          style="width: 40px; height: 40px"
+          alt=""
+        />
       </a>
     </div>
   </div>
@@ -32,13 +36,18 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 import { useRouter } from "vue-router";
 import menuList from "../router/routerPage/pages.js";
+onMounted(() => {
+  router.push({
+    path: menus[activeIndex.value].path,
+  });
+});
 const menus = menuList[0].children;
 const router = useRouter();
 const activeIndex = ref(0);
-console.log(activeIndex);
+
 const switchMenu = (item, index) => {
   activeIndex.value = index;
   router.push({
@@ -57,16 +66,17 @@ const switchMenu = (item, index) => {
   border-bottom: 1px solid #f0f0f0;
   .nav-left,
   .nav-right,
-  a{
+  a {
     display: flex;
     align-items: center;
     width: 100%;
     height: 50px;
   }
-  .nav-left{
+  .nav-left {
     justify-content: left;
   }
-  .nav-right,a{
+  .nav-right,
+  a {
     justify-content: right;
     margin-right: 10px;
   }
