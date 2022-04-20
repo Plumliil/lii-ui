@@ -1,9 +1,13 @@
-import liiButton from "./button/button";
-import liiInput from "./input/input";
-import liiTextarea from "./textarea/textarea";
-
-const components = [liiButton, liiInput, liiTextarea];
-
+import liiButton from "./button";
+import liiInput from "./input";
+import liiTextarea from "./textarea";
+import liiSpace from "./space";
+const components = [
+    liiButton,
+    liiInput,
+    liiSpace,
+    liiTextarea,
+];
 const install = app => {
     components.forEach(item => {
         app.use(item)
@@ -12,12 +16,10 @@ const install = app => {
 const LiiUI = {
     install,
 }
-
-// 按需导入
 export {
     liiButton,
     liiInput,
+    liiSpace,
     liiTextarea
 }
-// 全部引入
 export default LiiUI;
