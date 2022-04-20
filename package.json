@@ -1,7 +1,10 @@
 {
   "name": "lii-ui",
   "private": false,
-  "version": "0.0.0",
+  "version": "0.0.3",
+  "author": "plumli",
+  "license": "ISC",
+  "description": "A lightweight component library",
   "main": "./dist/lii-ui.umd.js",
   "module": "./dist/lii-ui.es.js",
   "exports": {
@@ -12,6 +15,10 @@
   },
   "files": [
     "dist/*"
+  ],
+  "keywords": [
+    "vue3",
+    "ui框架"
   ],
   "scripts": {
     "dev": "vite",
