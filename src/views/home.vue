@@ -38,6 +38,7 @@ import menuList from "../router/routerPage/pages.js";
 const menus = menuList[0].children;
 const router = useRouter();
 const activeIndex = ref(0);
+console.log(activeIndex);
 const switchMenu = (item, index) => {
   activeIndex.value = index;
   router.push({
@@ -84,7 +85,6 @@ const switchMenu = (item, index) => {
       line-height: 45px;
       padding: 0 10px;
       cursor: pointer;
-      // text-align: center;
       text-indent: 10px;
       box-sizing: border-box;
       &.active {
@@ -96,7 +96,6 @@ const switchMenu = (item, index) => {
   }
   .router-view {
     flex: 1;
-    // margin-left: ;
     padding-left: 20px;
   }
 }

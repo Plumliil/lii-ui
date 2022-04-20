@@ -35,10 +35,6 @@ export default {
 </script>
 
 <style lang='less' scoped>
-@dftColor: #ffffff;
-div{
-  // display: inline-block;
-}
 .lii-button {
   display: inline-block;
   cursor: pointer;
@@ -69,7 +65,7 @@ div{
   &.is-disabled {
     cursor: not-allowed;
     color: #c0c4cc;
-    background-color: @dftColor;
+    background-color: #ffffff;
     border: 1px solid #ebeef5;
   }
   // is-round圆角
@@ -93,7 +89,7 @@ div{
   }
   // 主要按钮
   &.lii-button--primary {
-    color: @dftColor;
+    color: #ffffff;
     background-color: #409eff;
     // hover状态
     &:focus,
@@ -102,7 +98,7 @@ div{
     }
     // is-disabled禁用
     &.is-disabled {
-      color: @dftColor;
+      color: #ffffff;
       cursor: not-allowed;
       background-color: #a0cfff;
       border: 1px solid #a0cfff;
@@ -114,7 +110,7 @@ div{
       border: 1px solid #409eff;
       &:focus,
       &:hover {
-        color: @dftColor;
+        color: #ffffff;
         background-color: #66b1ff;
       }
       &.is-disabled {
@@ -126,7 +122,7 @@ div{
   }
   // 成功按钮
   &.lii-button--success {
-    color: @dftColor;
+    color: #ffffff;
     background-color: #67c23a;
     &:focus,
     &hover {
@@ -134,7 +130,7 @@ div{
     }
     // is-disabled禁用
     &.is-disabled {
-      color: @dftColor;
+      color: #ffffff;
       cursor: not-allowed;
       background-color: #b3e19d;
       border: 1px solid #b3e19d;
@@ -146,7 +142,7 @@ div{
       border: 1px solid #93c26d;
       &:focus,
       &:hover {
-        color: @dftColor;
+        color: #ffffff;
         background-color: #67c23a;
       }
       &.is-disabled {
@@ -158,7 +154,7 @@ div{
   }
   // 信息按钮
   &.lii-button--info {
-    color: @dftColor;
+    color: #ffffff;
     background-color: #909399;
     &:focus,
     &:hover {
@@ -166,7 +162,7 @@ div{
     }
     // is-disabled禁用
     &.is-disabled {
-      color: @dftColor;
+      color: #ffffff;
       cursor: not-allowed;
       background-color: #c8c9cc;
       border: 1px solid #c8c9cc;
@@ -178,7 +174,7 @@ div{
       border: 1px solid #9093b0;
       &:focus,
       &:hover {
-        color: @dftColor;
+        color: #ffffff;
         background-color: #909399;
       }
       &.is-disabled {
@@ -190,7 +186,7 @@ div{
   }
   // 警告按钮
   &.lii-button--warning {
-    color: @dftColor;
+    color: #ffffff;
     background-color: #e6a23c;
     &:focus,
     &:hover {
@@ -198,7 +194,7 @@ div{
     }
     // is-disabled禁用
     &.is-disabled {
-      color: @dftColor;
+      color: #ffffff;
       cursor: not-allowed;
       background-color: #f3d19e;
       border: 1px solid #f3d19e;
@@ -210,7 +206,7 @@ div{
       border: 1px solid #efb43c;
       &:focus,
       &:hover {
-        color: @dftColor;
+        color: #ffffff;
         background-color: #e6a23c;
       }
       &.is-disabled {
@@ -222,7 +218,7 @@ div{
   }
   // 危险按钮
   &.lii-button--danger {
-    color: @dftColor;
+    color: #ffffff;
     background-color: #f56c6c;
     &:focus,
     &:hover {
@@ -230,7 +226,7 @@ div{
     }
     // is-disabled禁用
     &.is-disabled {
-      color: @dftColor;
+      color: #ffffff;
       cursor: not-allowed;
       background-color: #fab6b6;
       border: 1px solid #fab6b6;
@@ -242,7 +238,7 @@ div{
       border: 1px solid #fbc4c4;
       &:focus,
       &:hover {
-        color: @dftColor;
+        color: #ffffff;
         background-color: #f56c6c;
       }
       &.is-disabled {
