@@ -2,11 +2,13 @@ import liiButton from "./button";
 import liiInput from "./input";
 import liiTextarea from "./textarea";
 import liiSpace from "./space";
+import liiSelect from "./select";
 const components = [
     liiButton,
     liiInput,
     liiSpace,
     liiTextarea,
+    liiSelect
 ];
 const install = app => {
     components.forEach(item => {
@@ -20,6 +22,7 @@ export {
     liiButton,
     liiInput,
     liiSpace,
-    liiTextarea
+    liiTextarea,
+    liiSelect
 }
 export default LiiUI;
