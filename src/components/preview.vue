@@ -78,12 +78,11 @@ const copyCode = (e) => {
     }
   }
   .showCode {
-    z-index: 99;
     height: 45px;
     font-size: 15px;
     line-height: 45px;
     text-align: center;
-    border: @borderBase;
+    border: @baseBorder;
     cursor: pointer;
     transition: 0.3s;
     &:hover {

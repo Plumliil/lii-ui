@@ -24,9 +24,14 @@ export default[{
             component:()=>import('/packages/space/doc/doc.md')
         },
         {
-            path:'Textarea',
+            path:'textarea',
             name:'Textarea 文本域',
             component:()=>import('/packages/textarea/doc/doc.md')
+        },
+        {
+            path:'select',
+            name:'Select 下拉框',
+            component:()=>import('/packages/select/doc/doc.md')
         },
     ]
 

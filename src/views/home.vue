@@ -70,7 +70,7 @@ const switchMenu = (item, index) => {
     width: 100%;
     height: 70px;
     line-height: 45px;
-    border-bottom: @borderBase;
+    border-bottom: @baseBorder;
     .nav-left,
     .nav-right,
     a {
@@ -90,14 +90,14 @@ const switchMenu = (item, index) => {
   }
   .container {
     width: 80%;
-    min-height: 950px;
+    min-height: 930px;
     height: auto;
     display: flex;
     .left-menu {
       width: 200px;
       height: auto;
       overflow-y: hidden;
-      border-right: @borderBase;
+      border-right: @baseBorder;
       font-size: 14px;
       li {
         list-style: none;
@@ -116,7 +116,7 @@ const switchMenu = (item, index) => {
     .router-view {
       flex: 1;
       padding-left: 20px;
-      border-right: @borderBase;
+      border-right: @baseBorder;
     }
   }
 }
