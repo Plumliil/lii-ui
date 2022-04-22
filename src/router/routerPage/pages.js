@@ -33,6 +33,11 @@ export default[{
             name:'Select 下拉框',
             component:()=>import('/packages/select/doc/doc.md')
         },
+        {
+            path:'radio',
+            name:'Radio 选择',
+            component:()=>import('/packages/radio/doc/doc.md')
+        },
     ]
 
 }]

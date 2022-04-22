@@ -1,7 +1,7 @@
 {
   "name": "lii-ui",
   "private": false,
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "plumli",
   "license": "ISC",
   "description": "A lightweight component library",
@@ -11,12 +11,14 @@
     ".": {
       "import": "./dist/lii-ui.es.js",
       "require": "./dist/lii-ui.umd.js"
+    },
+    "./dist/style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
     }
   },
   "files": [
-    "dist/lii-ui.es.js",
-    "dist/lii-ui.umd.js",
-    "dist/style.css"
+    "dist"
   ],
   "keywords": [
     "vue3",
@@ -28,6 +30,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "js-beautify": "^1.14.3",
     "less": "^4.1.2",
     "vite-plugin-md": "^0.12.4",
     "vue": "^3.2.25",

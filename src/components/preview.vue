@@ -3,9 +3,7 @@
     <div class="pre-code-box">
       <!-- <span class="copy" v-show="showCode" @click="copyCode">copy</span> -->
       <transition name="codeTrans">
-        <pre class="langue-html" v-show="showCode">
-            <code ref="codeTxt">{{ sourceCode }}</code>
-        </pre>
+        <pre class="langue-html" v-show="showCode"><code ref="codeTxt">{{ sourceCode }}</code></pre>
       </transition>
     </div>
     <div class="showCode" @click="codeShow">
@@ -15,7 +13,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, useAttrs } from "vue";
+import { ref, onMounted} from "vue";
 const props = defineProps({
   compName: {
     type: String,
@@ -40,19 +38,12 @@ onMounted(() => {
   getSourceCode();
 });
 // 变量
-// const conText=useAttrs();
 const showCode = ref(false);
 const sourceCode = ref("");
-const codeTxt = ref(null);
 // 函数
+// console.log(sourceCode);
 const codeShow = () => {
   showCode.value = !showCode.value;
-};
-const copyCode = (e) => {
-  console.log(e);
-  console.log(codeTxt.value.innerHTML);
-  codeTxt.select();
-  document.execCommand('copy')
 };
 </script>
 
