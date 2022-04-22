@@ -3,7 +3,10 @@
     <div class="pre-code-box">
       <!-- <span class="copy" v-show="showCode" @click="copyCode">copy</span> -->
       <transition name="codeTrans">
-        <pre class="langue-html" v-show="showCode"><code ref="codeTxt">{{ sourceCode }}</code></pre>
+        <pre
+          class="langue-html"
+          v-show="showCode"
+        ><code ref="codeTxt">{{ sourceCode }}</code></pre>
       </transition>
     </div>
     <div class="showCode" @click="codeShow">
@@ -13,7 +16,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted} from "vue";
+import { ref, onMounted } from "vue";
 const props = defineProps({
   compName: {
     type: String,
@@ -54,6 +57,10 @@ const codeShow = () => {
   .pre-code-box {
     position: relative;
     background-color: #f0f0f0;
+    code {
+      font-family: "Courier New";
+      font-size: 12px;
+    }
     .copy {
       background-color: white;
       border-radius: 3px;
