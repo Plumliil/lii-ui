@@ -93,6 +93,7 @@ const switchMenu = (item, index) => {
     min-height: 930px;
     height: auto;
     display: flex;
+    margin-bottom: 300px;
     .left-menu {
       width: 200px;
       height: auto;

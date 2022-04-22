@@ -35,7 +35,7 @@ export default[{
         },
         {
             path:'radio',
-            name:'Radio 选择',
+            name:'Radio 单选',
             component:()=>import('/packages/radio/doc/doc.md')
         },
     ]
