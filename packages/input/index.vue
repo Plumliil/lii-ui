@@ -33,7 +33,7 @@ const liiInputClass = computed(() => {
   };
 });
 const input = (e) => {
-  emit("update:modelValue", e.target.value);
+  emits("update:modelValue", e.target.value);
 };
 </script>
 <style lang='less' scoped>
