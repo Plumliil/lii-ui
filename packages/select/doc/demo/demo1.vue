@@ -16,17 +16,17 @@ import { reactive } from "vue";
 const state = reactive({
   options: [
     {
-      name: "中国",
-      id: "china",
+      name: "选项一",
+      id: "0",
     },
     {
-      name: "美国",
-      id: "america",
+      name: "选项二",
+      id: "1",
       disabled: true,
     },
     {
-      name: "俄罗斯",
-      id: "russia",
+      name: "选项三",
+      id: "2",
     }
   ],
 });

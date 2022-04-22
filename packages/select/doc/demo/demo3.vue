@@ -13,20 +13,20 @@ export default {};
 <script setup>
 import liiSelect from "../../index.vue";
 import { reactive, ref } from "vue";
-const selVal=ref('china');
+const selVal=ref('0');
 const state = reactive({
   options: [
     {
-      label: "中国",
-      value: "china",
+      label: "选项一",
+      value: "0",
     },
     {
-      label: "美国",
-      value: "america",
+      label: "选项二",
+      value: "1",
     },
     {
-      label: "俄罗斯",
-      value: "russia",
+      label: "选项三",
+      value: "2",
     }
   ],
 });

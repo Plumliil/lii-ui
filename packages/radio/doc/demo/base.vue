@@ -1,5 +1,5 @@
 <template>
-  <lii-radio :options="options" @change="change"></lii-radio>
+  <lii-radio :options="options" :checked="0" ></lii-radio>
 </template>
 
 <script>
@@ -12,24 +12,20 @@ import liiRadio from "../../index.vue";
 const state = reactive({
   options: [
     {
-      label: "中国",
-      value: "china",
+      label: "选项一",
+      value: 1,
     },
     {
-      label: "美国",
-      value: "america",
-      disabled:true
+      label: "选项二",
+      value: 2,
     },
     {
-      label: "俄罗斯",
-      value: "russia",
+      label: "选项三",
+      value: 3,
     },
   ],
 });
 const { options } = state;
-const change=(v)=>{
-  console.log(v);
-}
 </script>
 
 <style lang='less' scoped>
