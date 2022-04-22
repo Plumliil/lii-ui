@@ -5,10 +5,14 @@
       v-for="(item, index) in props.options"
       :key="index"
       @click="change(item, index)"
-      :class="{ 'lii-item-disabled-radio': item.disabled }"
+      :class="[
+        { 'lii-item-disabled-radio': item.disabled },
+        itemRadioState,
+        { active: currentIndex === index && fontColor },
+      ]"
     >
       <span :class="{ active: currentIndex === index }"></span>
-      {{ item.label }}
+      {{ item[filedLabel] }}
     </div>
   </div>
 </template>
@@ -20,15 +24,45 @@ export default {
 </script>
 
 <script setup>
-import { ref } from "vue";
+import { computed, ref } from "vue";
 const emits = defineEmits(["change"]);
 const props = defineProps({
   options: {
     type: Array,
     default: () => [],
   },
+  inline: {
+    type: Boolean,
+    default: true,
+  },
+  size: {
+    type: String,
+    default: "nomal",
+  },
+  filedLabel: {
+    type: String,
+    default: "label",
+  },
+  filedValue: {
+    type: String,
+    default: "value",
+  },
+  customColor: {
+    type: String,
+    default: "#409eff",
+  },
+  fontColor:{
+    type: Boolean,
+    default: false,
+  }
 });
 const currentIndex = ref(-1);
+const itemRadioState = computed(() => {
+  return {
+    "lii-item-inline-radio": props.inline,
+    [`lii-item-${props.size}-radio`]: true,
+  };
+});
 const change = (item, index) => {
   if (!item.disabled) {
     currentIndex.value = index;
@@ -46,13 +80,14 @@ const change = (item, index) => {
     width: auto;
     height: auto;
     overflow: hidden;
-    display: inline-flex;
-    justify-content: center;
+    display: flex;
     align-items: center;
     line-height: 20px;
     cursor: pointer;
     font-size: 14px;
     margin-right: 15px;
+    margin-top: 3px;
+    margin-bottom: 3px;
     user-select: none;
     span {
       width: 14px;
@@ -61,7 +96,6 @@ const change = (item, index) => {
       background-color: #fff;
       position: relative;
       cursor: pointer;
-      display: inline-block;
       box-sizing: border-box;
       background: #fff;
       border: @baseBorder;
@@ -81,10 +115,51 @@ const change = (item, index) => {
         transition: transform 0.15s ease-in;
       }
       &.active {
-        background-color: @primary;
-        border: 1px solid @primary;
+          background-color: v-bind("props.customColor");
+          border: 1px solid v-bind("props.customColor");
+        }
+    }
+    &.active {
+      color: v-bind("props.customColor");
+      span {
+        background-color: v-bind("props.customColor");
+        border: 1px solid v-bind("props.customColor");
       }
     }
+  }
+  .lii-item-big-radio {
+    font-size: 16.8px;
+    line-height: 24px;
+    span {
+      width: 16.8px;
+      height: 16.8px;
+      margin-top: 3px;
+      &::after {
+        width: 4.8px;
+        height: 4.8px;
+        margin: -2.4px 0 0 -2.4px;
+      }
+    }
+  }
+  .lii-item-nomal-radio {
+    transform: scale(100%);
+  }
+  .lii-item-small-radio {
+    font-size: 9.8px;
+    line-height: 16px;
+    span {
+      width: 9.8px;
+      height: 9.8px;
+      margin-top: 3px;
+      &::after {
+        width: 2.8px;
+        height: 2.8px;
+        margin: -1.4px 0 0 -1.4px;
+      }
+    }
+  }
+  .lii-item-inline-radio {
+    display: inline-flex;
   }
   .lii-item-disabled-radio {
     cursor: no-drop;
