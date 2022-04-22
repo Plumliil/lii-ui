@@ -37,7 +37,7 @@ const props = defineProps({
   },
   size: {
     type: String,
-    default: "nomal",
+    default: "mid",
   },
   filedLabel: {
     type: String,
@@ -51,12 +51,19 @@ const props = defineProps({
     type: String,
     default: "#409eff",
   },
-  fontColor:{
+  fontColor: {
     type: Boolean,
     default: false,
-  }
+  },
+  checked: {
+    type: Number,
+    default: -1,
+  },
 });
-const currentIndex = ref(-1);
+if (props.checked > props.optionslength + 1) {
+  props.checked = 0;
+}
+const currentIndex = ref(props.checked);
 const itemRadioState = computed(() => {
   return {
     "lii-item-inline-radio": props.inline,
@@ -115,9 +122,9 @@ const change = (item, index) => {
         transition: transform 0.15s ease-in;
       }
       &.active {
-          background-color: v-bind("props.customColor");
-          border: 1px solid v-bind("props.customColor");
-        }
+        background-color: v-bind("props.customColor");
+        border: 1px solid v-bind("props.customColor");
+      }
     }
     &.active {
       color: v-bind("props.customColor");
@@ -141,7 +148,7 @@ const change = (item, index) => {
       }
     }
   }
-  .lii-item-nomal-radio {
+  .lii-item-mid-radio {
     transform: scale(100%);
   }
   .lii-item-small-radio {
