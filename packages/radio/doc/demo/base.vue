@@ -1,5 +1,5 @@
 <template>
-  <lii-radio :options="options" :checked="0" ></lii-radio>
+  <lii-radio :options="options" ></lii-radio>
 </template>
 
 <script>

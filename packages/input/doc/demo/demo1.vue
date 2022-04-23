@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <lii-input :placeholder="请输入内容" disabled />
+        <lii-input placeholder="请输入内容..." disabled />
     </div>
 </template>
 
