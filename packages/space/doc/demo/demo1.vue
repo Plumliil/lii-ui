@@ -1,28 +1,31 @@
 <template>
-    <lii-space :inline="true" :size="[10,30]" >
-        <lii-button>测试</lii-button>
-        <lii-button>测试</lii-button>
-        <lii-button>测试</lii-button>
-        <lii-button>测试</lii-button>
-        <lii-button>测试</lii-button>
-        <lii-button>测试</lii-button>
-        <lii-button>测试</lii-button>
-        <lii-button>测试</lii-button>
-        <lii-button>测试</lii-button>
-        <lii-button>测试</lii-button>
-        <lii-button>测试</lii-button>
-        <lii-button>测试</lii-button>
-    </lii-space>
+  <lii-space>
+    <lii-button>测试</lii-button>
+    <lii-button>测试</lii-button>
+    <lii-button>测试</lii-button>
+    <lii-button>测试</lii-button>
+    <lii-button>测试</lii-button>
+    <lii-button>测试</lii-button>
+    <lii-button>测试</lii-button>
+    <lii-button>测试</lii-button>
+    <lii-button>测试</lii-button>
+    <lii-button>测试</lii-button>
+    <lii-button>测试</lii-button>
+    <lii-button>测试</lii-button>
+  </lii-space>
 </template>
 
 <script>
-export default {}
+export default {};
 </script>
 
 <script setup>
-import liiSpace from '../../index.vue'
-import liiButton from '../../../button/index.vue'
+import liiSpace from "../../index.vue";
+import liiButton from "../../../button/index.vue";
 </script>
 
 <style lang='less' scoped>
+.lii-space{
+    width: 50%;
+}
 </style>

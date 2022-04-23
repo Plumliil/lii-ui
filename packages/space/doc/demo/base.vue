@@ -1,14 +1,5 @@
 <template>
-    <lii-space :inline="true" :size="[10,30]" >
-        <lii-button>测试</lii-button>
-        <lii-button>测试</lii-button>
-        <lii-button>测试</lii-button>
-        <lii-button>测试</lii-button>
-        <lii-button>测试</lii-button>
-        <lii-button>测试</lii-button>
-        <lii-button>测试</lii-button>
-        <lii-button>测试</lii-button>
-        <lii-button>测试</lii-button>
+    <lii-space >
         <lii-button>测试</lii-button>
         <lii-button>测试</lii-button>
         <lii-button>测试</lii-button>
