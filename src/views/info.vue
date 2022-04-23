@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1>这是简介</h1>
+    <img src="../assets/imgs/logo.png" alt="">
   </div>
 </template>
 
@@ -16,5 +16,8 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
+        img{
+          width: 30%;
+        }
     }
 </style>

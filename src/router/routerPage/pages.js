@@ -1,4 +1,5 @@
-export default[{
+export default[
+    {
     path:"/",
     name:"home",
     component:()=>import("../../views/home.vue"),
@@ -39,5 +40,5 @@ export default[{
             component:()=>import('/packages/radio/doc/doc.md')
         },
     ]
-
-}]
+}
+]

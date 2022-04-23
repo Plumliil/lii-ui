@@ -10,6 +10,10 @@
         <h1>LiiUI</h1>
       </div>
       <div class="nav-right">
+        <!-- <h2>简介</h2>
+        <router-link to="/">xx</router-link>
+        <h2>开始</h2>
+        <h2>版本</h2> -->
         <a href="https://github.com/Plumliil/lii-ui">
           <img
             src="../assets/imgs/github.png"
@@ -59,6 +63,7 @@ const switchMenu = (item, index) => {
 </script>
 <style lang='less' scoped>
 .home {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,8 +77,7 @@ const switchMenu = (item, index) => {
     line-height: 45px;
     border-bottom: @baseBorder;
     .nav-left,
-    .nav-right,
-    a {
+    .nav-right {
       display: flex;
       align-items: center;
       width: 100%;
@@ -81,11 +85,27 @@ const switchMenu = (item, index) => {
     }
     .nav-left {
       justify-content: left;
+      img{
+        margin-left: 100px;
+      }
     }
-    .nav-right,
-    a {
+    .nav-right {
       justify-content: right;
-      margin-right: 10px;
+      .router-link{
+        margin-left: 0;
+      }
+      h2{
+        font-weight: 400;
+        padding:0 10px;
+      }
+      a {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 120px;
+        padding: 0 10px;
+      }
     }
   }
   .container {
