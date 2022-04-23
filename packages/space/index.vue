@@ -1,16 +1,5 @@
 <template>
-  <div class="lii-space">
-    <span>1</span>
-    <span>1</span>
-    <span>1</span>
-    <span>1</span>
-    <span>1</span>
-    <span>1</span>
-    <span>1</span>
-    <span>1</span>
-    <span>1</span>
-    <span @click="aa">2</span>
-  </div>
+  <div class="lii-space"></div>
 </template>
 
 <script>
@@ -37,8 +26,7 @@ export default {
           ? `${props.size[0]}px`
           : `${props.size[0]}px ${props.size[1]}px`,
         "flex-direction":props.inline?"inherit":"column",
-        "flex-wrap": "wrap",
-        width: "100%",
+        
       };
     });
     $slots.default().forEach((item, index) => {
@@ -71,8 +59,8 @@ export default {
 
 <style lang='less' scoped>
 .lii-space {
-  display: inline-flex;
-
+  width: 100%;
+  flex-wrap: wrap;
   gap: 10px 10px;
 }
 </style>
