@@ -10,17 +10,17 @@
 ### 基本用法
 
 <baseDemo />
-<preview compName="input" demoName="base" />
+<preview compName="space" demoName="base" />
 
-### 禁止状态
+### 按列排放
 
 <demo1 />
-<preview compName="input" demoName="demo1" />
+<preview compName="space" demoName="demo1" />
 
-### 尺寸
+### 间隔选择
 
 <demo2 />
-<preview compName="input" demoName="demo1" />
+<preview compName="space" demoName="demo1" />
 
 ### Attributes
 
@@ -28,6 +28,5 @@
 
 | 参数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | 说明&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | 类型&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | 可选值&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | 默认值 | 
 | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- | :--------- |
-|size           |输入框大小        | String  | big/mid/small | mid        |
-|disabled       |输入框是否禁用    | Boolean |       —       | false      |
-|placeholder    |输入框内默认内容  | String  |       —       | 请输入...  |
+|inline     |是否按行排列    | Boolean  |   —   |    true      |
+|size       |组件内元素间隔  | Array    |   —   |   [10,10]    |
