@@ -90,12 +90,13 @@ const switchMenu = (item, index) => {
   }
   .container {
     width: 80%;
-    min-height: 930px;
+    height: auto;
     height: auto;
     display: flex;
     margin-bottom: 300px;
     .left-menu {
-      width: 200px;
+      min-width: 200px;
+
       height: auto;
       overflow-y: hidden;
       border-right: @baseBorder;

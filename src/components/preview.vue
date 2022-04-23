@@ -1,16 +1,15 @@
 <template>
   <div class="container">
-    <div class="pre-code-box">
-      <!-- <span class="copy" v-show="showCode" @click="copyCode">copy</span> -->
-      <transition name="codeTrans">
-        <pre
-          class="langue-html"
-          v-show="showCode"
-        ><code ref="codeTxt">{{ sourceCode }}</code></pre>
-      </transition>
-    </div>
+    <transition name="slide-fade" appear>
+      <div class="pre-code-box" v-if="isShowCode">
+        <!-- <span class="copy" v-show="showCode" @click="copyCode">copy</span> -->
+        <pre><code ref="codeTxt">{{ sourceCode }}</code></pre>
+      </div>
+    </transition>
     <div class="showCode" @click="codeShow">
-      {{ showCode ? "隐藏代码" : "显示代码" }}
+      {{ isShowCode ? "隐藏代码" : "显示代码" }}
+      <!-- {{ isShowCode ? "▲" : "▼" }} -->
+      <!-- {{ isShowCode ? "◠" : "◡" }} -->
     </div>
   </div>
 </template>
@@ -29,6 +28,8 @@ const props = defineProps({
     require: true,
   },
 });
+let reg = /^(import.*[index\.vue"];)$/gi;
+
 async function getSourceCode() {
   sourceCode.value = (
     await import(
@@ -41,12 +42,12 @@ onMounted(() => {
   getSourceCode();
 });
 // 变量
-const showCode = ref(false);
+const isShowCode = ref(false);
 const sourceCode = ref("");
+
 // 函数
-// console.log(sourceCode);
 const codeShow = () => {
-  showCode.value = !showCode.value;
+  isShowCode.value = !isShowCode.value;
 };
 </script>
 
@@ -73,6 +74,17 @@ const codeShow = () => {
       padding: 0 3px;
       position: absolute;
       cursor: pointer;
+    }
+    .slide-fade-enter-active {
+      transition: all 0.3s ease;
+    }
+    .slide-fade-leave-active {
+      transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
+    }
+    .slide-fade-enter,
+    .slide-fade-leave-to {
+      transform: translateY(-10px);
+      opacity: 0;
     }
   }
   .showCode {
