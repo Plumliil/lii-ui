@@ -1,39 +1,36 @@
 <template>
-    <button type="button" class="lii-button" :class="liiClass">
-      <span><slot>默认按钮</slot></span>
-    </button>
+  <button type="button" class="lii-button" :class="liiClass">
+    <span><slot>默认按钮</slot></span>
+  </button>
 </template>
 
 <script>
-import { computed } from "vue";
 export default {
   name: "liiButton",
-  props: {
-    type: {
-      type: String,
-      validator(value) {
-        const typeArr = ["primary", "success", "info", "warning", "danger"];
-        return typeArr.includes(value);
-      },
-    },
-  },
-  setup(props, { attrs }) {
-    const liiClass = computed(() => {
-      let btnClassArr = ["lii-button--" + props.type];
-      if ("size" in attrs) btnClassArr.push(attrs.size);
-      if ("disabled" in attrs) btnClassArr.push("is-disabled");
-      if ("plain" in attrs) btnClassArr.push("is-plain");
-      if ("round" in attrs) btnClassArr.push("is-round");
-      if ("circle" in attrs) btnClassArr.push("is-circle");
-      return btnClassArr;
-    });
-    return {
-      liiClass,
-    };
-  },
 };
 </script>
-
+<script setup>
+import { computed, useAttrs } from "vue";
+const $attrs = useAttrs();
+const props = defineProps({
+  type: {
+    type: String,
+    validator(value) {
+      const typeArr = ["primary", "success", "info", "warning", "danger"];
+      return typeArr.includes(value);
+    },
+  },
+});
+const liiClass = computed(() => {
+  let btnClassArr = ["lii-button--" + props.type];
+  if ("size" in $attrs) btnClassArr.push(`lii-${$attrs.size}-button`);
+  if ("disabled" in $attrs) btnClassArr.push("is-disabled");
+  if ("plain" in $attrs) btnClassArr.push("is-plain");
+  if ("round" in $attrs) btnClassArr.push("is-round");
+  if ("circle" in $attrs) btnClassArr.push("is-circle");
+  return btnClassArr;
+});
+</script>
 <style lang='less' scoped>
 .lii-button {
   display: inline-block;
@@ -48,14 +45,20 @@ export default {
   text-align: center;
   font-size: 14px;
   margin: 5px;
-  &.middle {
-    transform: scale(0.9);
+  &.lii-big-button {
+    padding: 14.4px 24px;
+    font-size: 16.8px;
   }
-  &.small {
-    transform: scale(0.8);
+  &.lii-mid-button {
+    transform: scale(1);
   }
-  &.mini {
-    transform: scale(0.7);
+  &.lii-small-button {
+    padding: 8.4px 14px;
+    font-size: 9.8px;
+  }
+  &.lii-mini-button {
+    padding: 6px 10px;
+    font-size: 7px;
   }
   &:focus,
   &:hover {
