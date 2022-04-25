@@ -39,6 +39,11 @@ export default[
             name:'Radio 单选',
             component:()=>import('/packages/radio/doc/doc.md')
         },
+        {
+            path:'message',
+            name:'message 消息',
+            component:()=>import('/packages/message/doc/doc.md')
+        },
     ]
 }
 ]
