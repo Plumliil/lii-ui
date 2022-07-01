@@ -57,7 +57,8 @@ const codeShow = () => {
   margin: 20px 0;
   .pre-code-box {
     position: relative;
-    background-color: #f0f0f0;
+    padding: 3px;
+    background-color: rgba(245,245,245,.8);
     code {
       font-family: "Courier New";
       font-size: 12px;

@@ -11,21 +11,21 @@
 
 <based />
 
-<preview compName="Button" demoName="base" />
+<preview compName="button" demoName="base" />
 
 ### 禁用状态
 按钮不可用状态。
 
 <demo1 />
 
-<preview compName="Button" demoName="demo1" />
+<preview compName="button" demoName="demo1" />
 
 ### 大小选择
 设置按钮大小
 
 <demo2 />
 
-<preview compName="Button" demoName="demo2" />
+<preview compName="button" demoName="demo2" />
 
 ### Attributes
 

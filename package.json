@@ -39,5 +39,13 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.1",
     "vite": "^2.9.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Plumliil/lii-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Plumliil/lii-ui/issues"
+  },
+  "homepage": "https://github.com/Plumliil/lii-ui#readme"
 }
