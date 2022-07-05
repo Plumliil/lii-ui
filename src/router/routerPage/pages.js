@@ -44,6 +44,11 @@ export default[
             name:'message 消息',
             component:()=>import('/packages/message/doc/doc.md')
         },
+        {
+            path:'collapse',
+            name:'collapse 消息',
+            component:()=>import('/packages/collapse/doc/doc.md')
+        },
     ]
 }
 ]
