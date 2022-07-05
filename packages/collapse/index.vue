@@ -1,5 +1,5 @@
 <template>
-    <div ref="collapseRoot" @itemClick="itemClick">
+    <div ref="collapseRoot" @onItemClick="itemClick">
         <slot>
 
         </slot>
