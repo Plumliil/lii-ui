@@ -1,5 +1,5 @@
 <template>
-    <div ref="collapseRoot" @onItemClick="itemClick">
+    <div>
         <slot>
 
         </slot>
@@ -11,6 +11,11 @@ import { provide } from '@vue/runtime-core';
 import { ref } from 'vue';
 export default {
   name: 'liiCollapse',
+  emits:{
+      itemCLick:val=>{
+          console.log(val);
+      }
+  }
 }
 </script>
 <script setup>
@@ -20,15 +25,13 @@ const props=defineProps({
         default:[]
     }
 })
-const collapseRoot=ref(null);
 const PARENT_PROVIDE='parentProvide';
-console.log(props);
 provide(PARENT_PROVIDE,props);
-const itemCLick=(v)=>{
-    console.log(v);
-    console.log(11);
-}
 </script>
 
 <style lang='less' scoped >
+*{
+    margin: 0;
+    padding: 0;
+}
 </style>

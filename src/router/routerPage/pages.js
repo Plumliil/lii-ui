@@ -41,12 +41,12 @@ export default[
         },
         {
             path:'message',
-            name:'message 消息',
+            name:'Message 消息',
             component:()=>import('/packages/message/doc/doc.md')
         },
         {
             path:'collapse',
-            name:'collapse 消息',
+            name:'Collapse 手风琴',
             component:()=>import('/packages/collapse/doc/doc.md')
         },
     ]

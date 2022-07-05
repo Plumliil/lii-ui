@@ -1,5 +1,5 @@
 <template>
-    <lii-collapse>
+    <lii-collapse :value="activeName">
         <lii-collapse-item title="一致性 Consistency" :name="1">
             <div>与现实生活一致：与现实生活的流程、逻辑保持一致，遵循用户习惯的语言和概念；</div>
             <div>在界面中一致：所有的元素和结构需保持一致，比如：设计样式、图标和文本、元素的位置等。</div>
@@ -13,7 +13,7 @@
             <div>清晰明确：语言表达清晰且表意明确，让用户快速理解进而作出决策；</div>
             <div>帮助用户识别：界面简单直白，让用户快速识别而非回忆，减少用户记忆负担。</div>
         </lii-collapse-item>
-        <lii-collapse-item title="可控 Controllability"  :name="4">
+        <lii-collapse-item title="可控 Controllability" :name="4">
             <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
             <div>帮助用户识别：界面简单直白，让用户快速识别而非回忆，减少用户记忆负担。</div>
         </lii-collapse-item>
@@ -21,15 +21,18 @@
 </template>
 
 <script>
-import { ref } from '@vue/reactivity';
-export default {
-  name: '',
-}
+    import {
+        ref
+    } from '@vue/reactivity';
+    export default {
+        name: '',
+    }
 </script>
 <script setup>
-import liiCollapse from '../../index.vue';
-import liiCollapseItem from '../../indexItem.vue';
+    import liiCollapse from '../../index.vue';
+    import liiCollapseItem from '../../indexItem.vue';
+    const activeName = [1]
 </script>
 
-<style lang='less' scoped >
+<style lang='less' scoped>
 </style>
