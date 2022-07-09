@@ -5,15 +5,15 @@
     import preview from "../../../src/components/preview.vue"
 </script>
 
-### 基本用法
-同时展开多个面板，面板之间不影响
-
+### 线形进度条
+进度百分比显示在右侧
 <baseDemo />
 <preview compName="progress" demoName="base" />
 
 
-### 默认选中
-默认选中第一个面板
+### 百分比内显
+
+百分比不占用额外控件，适用于文件上传等场景。
 
 <demo1 />
 <preview compName="progress" demoName="demo1" />

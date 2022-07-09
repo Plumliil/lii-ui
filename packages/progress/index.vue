@@ -1,12 +1,15 @@
 <template>
     <div class="liiProgress">
-        <div class="liiProgress-bar" :style="{width:percentage+'%'}">
-            <span class="percentNum">{{props.percentage+'%'}}</span>
+        <div :class="liiProgressBar" :style="{width:percentage+'%'}">
+            <p :class="percentText">{{props.percentage+'%'}}</p>
         </div>
     </div>
 </template>
 
 <script>
+    import {
+        reactive
+    } from '@vue/reactivity';
     export default {
         name: 'liiProgress',
     }
@@ -19,19 +22,23 @@
         },
         type: {
             // 类型
-            type: String
+            type: String,
+            default: 'line'
+
         },
         strokeWidth: {
             // 宽度
             type: Number,
         },
-        textLine: {
+        textInside: {
             // 进度条显示文字内置在进度条内
-            type: Boolean
+            type: Boolean,
+            default: false
         },
         status: {
             // 进度条状态
-            type: String
+            type: String,
+            default: 'primary'
         },
         showText: {
             // 是否显示进度条文字
@@ -42,6 +49,45 @@
             default: []
         }
     })
+    let liiProgressBar = reactive([]);
+    let percentText = reactive(['percentText'])
+    if (props.type === 'line' && props.textInside === true) {
+        liiProgressBar.push('liiProgress-bar-progressText')
+    } else {
+        liiProgressBar.push('liiProgress-bar')
+    }
+    if (props.status) {
+        switch (props.status) {
+            case 'primary':
+                liiProgressBar.push('liiProgress-status-primary')
+                break;
+            case 'success':
+                liiProgressBar.push('liiProgress-status-success')
+                break;
+            case 'warning':
+                liiProgressBar.push('liiProgress-status-warning')
+                break;
+            case 'error':
+                liiProgressBar.push('liiProgress-status-error')
+                break;
+            default:
+                liiProgressBar.push('liiProgress-status-primary')
+                break;
+        }
+    }
+    if (props.type === 'line') {
+        switch (props.textInside) {
+            case false:
+                percentText.push('liiProgress-bar-textOutside')
+                break;
+            case true:
+                percentText.push('liiProgress-bar-textInside')
+                break;
+            default:
+                percentText.push('liiProgress-bar-textOutside')
+                break;
+        }
+    }
 </script>
 
 <style lang='less' scoped>
@@ -53,22 +99,61 @@
     .liiProgress {
         position: relative;
         width: 500px;
-        height: 10px;
+        height: auto;
         border: @baseBorder;
-        border-radius: 10px;
+        border-radius: 30px;
+        margin: 20px 0px;
 
         .liiProgress-bar {
             width: 0;
-            height: 100%;
-            background-color: aquamarine;
+            height: 6px;
+            background-color: @primary;
             text-align: center;
             border-radius: 10px;
 
-            .percentNum {
+            .liiProgress-bar-textOutside {
                 position: absolute;
                 right: -50px;
-                top: -7px;
+                top: -10px;
             }
+
+            .liiProgress-bar-textInside {
+                position: absolute;
+                right: -50px;
+                top: -10px;
+            }
+        }
+
+        .liiProgress-bar-progressText {
+            height: 30px;
+            width: 0;
+            border-radius: 20px;
+            // margin: 20px 0;
+            line-height: 30px;
+            color: white;
+            font-weight: 700;
+            text-align: right;
+            margin-right: 30px;
+            
+        }
+        .percentText{
+            display: block;
+            padding-right: 10px;
+}
+        .liiProgress-status-primary {
+            background-color: @primary;
+        }
+
+        .liiProgress-status-success {
+            background-color: @success;
+        }
+
+        .liiProgress-status-warning {
+            background-color: @warning;
+        }
+
+        .liiProgress-status-error {
+            background-color: @error;
         }
     }
 </style>

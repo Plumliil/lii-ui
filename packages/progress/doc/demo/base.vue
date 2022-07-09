@@ -1,6 +1,9 @@
 <template>
-    <lii-progress :percentage="percentage">
-    </lii-progress>
+    <lii-progress :percentage="100"></lii-progress>
+    <lii-progress :percentage="80" status="primary"></lii-progress>
+    <lii-progress :percentage="60" status="success"></lii-progress>
+    <lii-progress :percentage="40" status="warning"></lii-progress>
+    <lii-progress :percentage="20" status="error"></lii-progress>
 </template>
 
 <script>
@@ -17,12 +20,8 @@ const timer=setInterval(()=>{
         return 
     }
     percentage.value++
-    console.log(percentage.value);
 },100)
-if(percentage===111){
-    clearInterval(timer)
-    console.log('========================');
-}
+
 </script>
 
 <style lang='less' scoped >
