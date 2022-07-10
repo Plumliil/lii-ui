@@ -1,7 +1,7 @@
 <template>
     <div class="liiProgress">
         <div :class="liiProgressBar" :style="{width:percentage+'%'}">
-            <p :class="percentText">{{props.percentage+'%'}}</p>
+            <p v-if="showText" :class="percentText">{{props.percentage+'%'}}</p>
         </div>
     </div>
 </template>
@@ -42,13 +42,16 @@
         },
         showText: {
             // 是否显示进度条文字
-            type: Boolean
+            type: Boolean,
+            default:true
         },
         value: {
             type: Array,
             default: []
         }
     })
+    console.log(props);
+    console.log(props.color);
     let liiProgressBar = reactive([]);
     let percentText = reactive(['percentText'])
     if (props.type === 'line' && props.textInside === true) {

@@ -3,7 +3,7 @@
     <lii-progress :percentage="80" status="primary"></lii-progress>
     <lii-progress :percentage="60" status="success"></lii-progress>
     <lii-progress :percentage="40" status="warning"></lii-progress>
-    <lii-progress :percentage="20" status="error"></lii-progress>
+    <lii-progress :percentage="20" status="error"> </lii-progress>
 </template>
 
 <script>
@@ -15,13 +15,6 @@ export default {
 <script setup>
 import liiProgress from '../../index.vue';
 const percentage=ref(10);
-const timer=setInterval(()=>{
-    if(percentage.value===100){
-        return 
-    }
-    percentage.value++
-},100)
-
 </script>
 
 <style lang='less' scoped >

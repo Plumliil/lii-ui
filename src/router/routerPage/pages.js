@@ -49,6 +49,27 @@ export default[
             name:'Collapse 手风琴',
             component:()=>import('/packages/collapse/doc/doc.md')
         },
+        {
+            path:'search',
+            name:'Search 搜索框',
+            component:()=>import('/packages/search/doc/doc.md')
+        },
+        {
+            path:'colorPick',
+            name:'ColorPick 颜色选择',
+            component:()=>import('/packages/colorPick/doc/doc.md')
+        },
+        {
+            path:'progress',
+            name:'Progress 进度条',
+            component:()=>import('/packages/progress/doc/doc.md')
+        },
+        {
+            path:'badge',
+            name:'Badge 标记',
+            component:()=>import('/packages/progress/doc/doc.md')
+        },
+
     ]
 }
 ]

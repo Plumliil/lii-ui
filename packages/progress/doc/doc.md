@@ -2,6 +2,7 @@
 <script setup>
     import baseDemo from './demo/base.vue';
     import demo1 from './demo/demo1.vue';
+    import demo2 from './demo/demo2.vue';
     import preview from "../../../src/components/preview.vue"
 </script>
 
@@ -17,5 +18,13 @@
 
 <demo1 />
 <preview compName="progress" demoName="demo1" />
+
+
+### 自定义颜色
+
+百分比不占用额外控件，适用于文件上传等场景。
+
+<demo2 />
+<preview compName="progress" demoName="demo2" />
 
 
