@@ -1,7 +1,9 @@
 <template>
     <lii-progress :percentage="100" :color="customColor"></lii-progress>
     <lii-progress :percentage="80" status="primary" :color="customColor"></lii-progress>
-    <lii-progress :percentage="80" status="primary" :color="customColors"></lii-progress>
+    <lii-progress :percentage="perchange" status="primary" :colors="customColors"></lii-progress>
+    <button @click="add">+10</button>
+    <button @click="sub">-10</button>
 </template>
 
 <script>
@@ -21,6 +23,19 @@ const customColors=reactive([
         {color: '#6f7ad3', percentage: 100}
 ]);
 console.log(customColors);
+const perchange=ref(0)
+// setInterval(()=>{
+//   if(perchange.value<100){
+//     perchange.value++
+//   }
+//   console.log(perchange.value);
+// },1000)
+const add=()=>{
+  perchange.value+=10
+}
+const sub=()=>{
+  perchange.value-=10
+}
 </script>
 
 <style lang='less' scoped >

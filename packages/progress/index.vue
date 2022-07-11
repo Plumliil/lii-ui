@@ -1,6 +1,6 @@
 <template>
     <div class="liiProgress">
-        <div :class="liiProgressBar" :style="{width:percentage+'%'}">
+        <div :class="liiProgressBar" :style="{'width':percentage+'%','background-color':colorChange}">
             <p v-if="showText" :class="percentText">{{props.percentage+'%'}}</p>
         </div>
     </div>
@@ -8,8 +8,11 @@
 
 <script>
     import {
+        ref,
         reactive
+
     } from '@vue/reactivity';
+import { onMounted, onUpdated } from '@vue/runtime-core';
     export default {
         name: 'liiProgress',
     }
@@ -43,17 +46,23 @@
         showText: {
             // 是否显示进度条文字
             type: Boolean,
-            default:true
+            default: true
+        },
+        color: {
+            type: String
+        },
+        colors: {
+            type: Array,
+            default: () => []
         },
         value: {
             type: Array,
             default: []
         }
     })
-    console.log(props);
-    console.log(props.color);
     let liiProgressBar = reactive([]);
     let percentText = reactive(['percentText'])
+    let colorChange = ref('');
     if (props.type === 'line' && props.textInside === true) {
         liiProgressBar.push('liiProgress-bar-progressText')
     } else {
@@ -91,6 +100,19 @@
                 break;
         }
     }
+
+    onUpdated(()=>{
+    if (props.color) {
+        colorChange = 'background-color:' + props.color;
+    } else if (props.colors) {
+        props.colors.forEach(item => {
+            if (props.percentage >= item.percentage) {
+                colorChange = item.color
+            }
+        })
+    }
+    })
+    console.log(props.percentage);
 </script>
 
 <style lang='less' scoped>
@@ -137,12 +159,14 @@
             font-weight: 700;
             text-align: right;
             margin-right: 30px;
-            
+
         }
-        .percentText{
+
+        .percentText {
             display: block;
             padding-right: 10px;
-}
+        }
+
         .liiProgress-status-primary {
             background-color: @primary;
         }
