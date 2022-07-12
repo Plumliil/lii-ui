@@ -12,7 +12,11 @@
         reactive
 
     } from '@vue/reactivity';
-import { onMounted, onUpdated } from '@vue/runtime-core';
+    import {
+        onMounted,
+        onUpdated,
+        onActivated
+    } from '@vue/runtime-core';
     export default {
         name: 'liiProgress',
     }
@@ -101,9 +105,8 @@ import { onMounted, onUpdated } from '@vue/runtime-core';
         }
     }
 
-    onUpdated(()=>{
     if (props.color) {
-        colorChange = 'background-color:' + props.color;
+        colorChange =props.color;
     } else if (props.colors) {
         props.colors.forEach(item => {
             if (props.percentage >= item.percentage) {
@@ -111,8 +114,7 @@ import { onMounted, onUpdated } from '@vue/runtime-core';
             }
         })
     }
-    })
-    console.log(props.percentage);
+    console.log(props.color);
 </script>
 
 <style lang='less' scoped>
@@ -138,13 +140,13 @@ import { onMounted, onUpdated } from '@vue/runtime-core';
 
             .liiProgress-bar-textOutside {
                 position: absolute;
-                right: -50px;
+                right: -55px;
                 top: -10px;
             }
 
             .liiProgress-bar-textInside {
                 position: absolute;
-                right: -50px;
+                right: -55px;
                 top: -10px;
             }
         }

@@ -7,7 +7,7 @@
 </script>
 
 ### 线形进度条
-进度百分比显示在右侧
+普通线性进度条，百分比显示在右侧
 <baseDemo />
 <preview compName="progress" demoName="base" />
 
@@ -22,7 +22,7 @@
 
 ### 自定义颜色
 
-百分比不占用额外控件，适用于文件上传等场景。
+自定义进度条颜色
 
 <demo2 />
 <preview compName="progress" demoName="demo2" />
