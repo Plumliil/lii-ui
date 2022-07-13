@@ -1,6 +1,6 @@
-import liiCollapse from './index.vue'
-liiCollapse.install = app => {
-    app.component(liiCollapse.name, liiCollapse)
+import liiColorPick from './index.vue'
+liiColorPick.install = app => {
+    app.component(liiColorPick.name, liiColorPick)
 }
 
-export default liiCollapse;
+export default liiColorPick;

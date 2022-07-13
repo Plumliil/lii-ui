@@ -1,8 +1,6 @@
 <template>
-    <div>
-        <slot>
-
-        </slot>
+    <div class="colorPick">
+        
     </div>
 </template>
 
@@ -10,7 +8,7 @@
 import { provide } from '@vue/runtime-core';
 import { ref } from 'vue';
 export default {
-  name: 'liiCollapse',
+  name: 'liiColorPick',
   emits:{
       itemCLick:val=>{
           console.log(val);
@@ -30,8 +28,11 @@ provide(PARENT_PROVIDE,props);
 </script>
 
 <style lang='less' scoped >
-*{
-    margin: 0;
-    padding: 0;
+.colorPick {
+    width: 300px;
+    height: 300px;
+  /* 色相：从左到右依次为 红、黄、绿、青、蓝、洋红，等分渐变 */
+  background: linear-gradient(to right, #f00 0%, #ff0 17%, #0f0 33%, #0ff 50%, #00f 67%, #f0f 83%, #f00 100%);
 }
+
 </style>
