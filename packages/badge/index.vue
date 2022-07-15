@@ -1,37 +1,82 @@
 <template>
-    <div>
-        <slot>
-
-        </slot>
+    <div class="lii-badge" ref="badge">
+        <slot class="xxx"></slot>
+        <span class="lii-badge-modify" :style="modifyStyle">
+            {{badgeValue}}
+        </span>
     </div>
 </template>
 
 <script>
-import { provide } from '@vue/runtime-core';
-import { ref } from 'vue';
-export default {
-  name: 'liiCollapse',
-  emits:{
-      itemCLick:val=>{
-          console.log(val);
-      }
-  }
-}
+    import {
+        reactive,
+        ref
+    } from 'vue';
+    export default {
+        name: 'liiBadge',
+    }
 </script>
 <script setup>
-const props=defineProps({
-    value:{
-        type:Array,
-        default:[]
+    const props = defineProps({
+        value: {
+            type: String || Number
+        }
+    })
+    let badgeValue = ref(props.value);
+    let modifyWidth = ref(0)
+    let modifyStyle = reactive({
+        'width': '',
+        'border-radius': '50%'
+    });
+    let a = parseInt('a')
+    console.log(a);
+    console.log(badgeValue.value);
+    if (badgeValue.value.length && badgeValue.value.length - 1 > 0) {
+        if (parseInt(badgeValue.value) > 99) {
+        badgeValue.value = '99+'
+        modifyWidth = (badgeValue.value.length - 1) * 10 + 15 + 'px';
+        modifyStyle = reactive({
+            'width': '20px',
+            'border-radius': '15px',
+            'font-size': '6px'
+        });
+        } else {
+            modifyWidth = (badgeValue.length - 1) * 10 + 15 + 'px';
+            modifyStyle = reactive({
+                // 'width': modifyWidth,
+                'border-radius': '15px',
+            });
+        }
+    } else {
+        modifyStyle = reactive({
+            'width': '10px',
+            'height': '10px',
+            'border-radius': '15px',
+            'right': '10px'
+        });
     }
-})
-const PARENT_PROVIDE='parentProvide';
-provide(PARENT_PROVIDE,props);
 </script>
 
-<style lang='less' scoped >
-*{
-    margin: 0;
-    padding: 0;
-}
+<style lang='less' scoped>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .lii-badge {
+        position: relative;
+        display: flex;
+        font-size: 10px;
+
+        .lii-badge-modify {
+            position: relative;
+            text-align: center;
+            background-color: #f56c6c;
+            color: aliceblue;
+            height: 10px;
+            right: 15px;
+            line-height: 9px;
+            padding: 3px;
+        }
+    }
 </style>

@@ -1,7 +1,4 @@
 <template>
-  <lii-badge value="1" class="item">
-    <lii-button size="mids">标记</lii-button>
-  </lii-badge>
   <lii-badge value="12" class="item">
     <lii-button size="mids">标记</lii-button>
   </lii-badge>
@@ -11,7 +8,7 @@
   <lii-badge value="12" class="item">
     <lii-button size="mini">标记</lii-button>
   </lii-badge>
-  <lii-badge value="122" class="item">
+  <lii-badge value="1" class="item">
     <lii-button size="mini">标记</lii-button>
   </lii-badge>
 </template>
@@ -29,7 +26,5 @@
 </script>
 
 <style lang='less' scoped>
-  .item {
-    margin: 5px 0;
-  }
+
 </style>

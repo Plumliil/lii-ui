@@ -1,6 +1,6 @@
-import liiCollapse from './index.vue'
-liiCollapse.install = app => {
-    app.component(liiCollapse.name, liiCollapse)
+import liiBadge from './index.vue'
+liiBadge.install = app => {
+    app.component(liiBadge.name, liiBadge)
 }
 
-export default liiCollapse;
+export default liiBadge;
