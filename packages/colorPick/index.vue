@@ -9,11 +9,6 @@ import { provide } from '@vue/runtime-core';
 import { ref } from 'vue';
 export default {
   name: 'liiColorPick',
-//   emits:{
-//       itemCLick:val=>{
-//           console.log(val);
-//       }
-//   }
 }
 </script>
 <script setup>
@@ -23,8 +18,6 @@ const props=defineProps({
         default:[]
     }
 })
-// const PARENT_PROVIDE='parentProvide';
-provide(PARENT_PROVIDE,props);
 </script>
 
 <style lang='less' scoped >
