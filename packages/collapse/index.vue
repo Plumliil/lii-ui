@@ -11,11 +11,6 @@ import { provide } from '@vue/runtime-core';
 import { ref } from 'vue';
 export default {
   name: 'liiCollapse',
-  emits:{
-      itemCLick:val=>{
-          console.log(val);
-      }
-  }
 }
 </script>
 <script setup>
