@@ -70,6 +70,12 @@ export default[
             component:()=>import('/packages/badge/doc/doc.md')
         },
 
+        {
+            path:'loading',
+            name:'Loading 加载动画',
+            component:()=>import('/packages/loading/doc/doc.md')
+        },
+
     ]
 }
 ]
