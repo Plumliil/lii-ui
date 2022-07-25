@@ -390,7 +390,7 @@
                 transform: rotate(-35deg);
                 justify-content: center;
                 align-items: center;
-                width: calc(100%+400px);
+                // width: calc(100%+400px);
                 -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
 
                 .loader-five-cube {
