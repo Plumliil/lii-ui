@@ -7,7 +7,7 @@
     <div class="nav-right">
 
       <a href="">首页</a>
-      <a href="">组件</a>
+      <router-link to="init">开始</router-link>
       <router-link to="logs">更新日志</router-link>
       <a href="">问题反馈</a>
       <a href="https://github.com/Plumliil/lii-ui">

@@ -43,11 +43,11 @@ export default [{
                 name: 'Radio 单选',
                 component: () => import('/packages/radio/doc/doc.md')
             },
-            {
-                path: '/message',
-                name: 'Message 消息',
-                component: () => import('/packages/message/doc/doc.md')
-            },
+            // {
+            //     path: '/message',
+            //     name: 'Message 消息',
+            //     component: () => import('/packages/message/doc/doc.md')
+            // },
             {
                 path: '/collapse',
                 name: 'Collapse 手风琴',
@@ -58,11 +58,11 @@ export default [{
             //     name:'Search 搜索框',
             //     component:()=>import('/packages/search/doc/doc.md')
             // },
-            {
-                path: '/colorPick',
-                name: 'ColorPick 颜色选择',
-                component: () => import('/packages/colorPick/doc/doc.md')
-            },
+            // {
+            //     path: '/colorPick',
+            //     name: 'ColorPick 颜色选择',
+            //     component: () => import('/packages/colorPick/doc/doc.md')
+            // },
             {
                 path: '/progress',
                 name: 'Progress 进度条',
@@ -78,6 +78,11 @@ export default [{
                 path: '/loading',
                 name: 'Loading 加载动画',
                 component: () => import('/packages/loading/doc/doc.md')
+            },
+            {
+                path: '/upload',
+                name: 'Upload 文件选择上传',
+                component: () => import('/packages/upload/doc/doc.md')
             },
 
         ]
