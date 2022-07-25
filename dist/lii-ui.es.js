@@ -71,7 +71,7 @@ const _sfc_main$6 = /* @__PURE__ */ Object.assign(__default__$5, {
     };
   }
 });
-var liiButton = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__scopeId", "data-v-330ea7f5"]]);
+var liiButton = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__scopeId", "data-v-af64824e"]]);
 liiButton.install = (app) => {
   app.component(liiButton.name, liiButton);
 };
