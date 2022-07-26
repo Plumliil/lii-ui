@@ -25,7 +25,7 @@
     let badgeValue = ref(props.value);
     let modifyWidth = ref(0)
     let modifyStyle = reactive({
-        'width': '',
+        'width': '20px',
         'border-radius': '50%'
     });
     let a = parseInt('a')
@@ -36,7 +36,7 @@
         badgeValue.value = '99+'
         modifyWidth = (badgeValue.value.length - 1) * 10 + 15 + 'px';
         modifyStyle = reactive({
-            'width': '20px',
+            'width': '30px',
             'border-radius': '15px',
             'font-size': '6px'
         });
@@ -49,19 +49,19 @@
         }
     } else {
         modifyStyle = reactive({
-            'width': '10px',
-            'height': '10px',
+            'width': '15px',
+            'height': '15px',
             'border-radius': '15px',
             'right': '10px'
         });
     }
 </script>
 
-<style lang='less' scoped>
-    * {
-        margin: 0;
-        padding: 0;
-    }
+<style lang='less'>
+    // * {
+    //     margin: 0;
+    //     padding: 0;
+    // }
 
     .lii-badge {
         position: relative;
@@ -73,7 +73,7 @@
             text-align: center;
             background-color: #f56c6c;
             color: aliceblue;
-            height: 10px;
+            height: 15px;
             right: 15px;
             line-height: 9px;
             padding: 3px;
