@@ -75,10 +75,10 @@
       menusPart3.push(item)
     }
   })
-  console.log(menusPart1);
+  // console.log(menusPart1);
   const router = useRouter();
   const activeIndex = ref(0);
-  console.log(menus);
+  // console.log(menus);
   const switchMenu = (item, index) => {
     activeIndex.value = index;
     router.push({

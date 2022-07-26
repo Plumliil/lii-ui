@@ -1,7 +1,7 @@
 <template>
   <div class="nav">
     <div class="nav-left">
-      <img src="./assets/imgs/LiiUi.png" style="width: 50px; height: 50px" alt="" />
+      <img src="./assets/imgs/logo.png" style="width: 50px; height: 50px" alt="" />
       <h1>LiiUI</h1>
     </div>
     <div class="nav-right">

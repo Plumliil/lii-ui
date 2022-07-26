@@ -2,7 +2,7 @@
     <div class="lii-index">
         <div class="container">
             <div class="logo">
-                <img src="../assets/imgs/LiiUi.png" alt="">
+                <img src="../assets/imgs/logo.png" alt="">
                 <p> Lii，一套基于 Vue 3.0 的组件库</p>
 
             </div>

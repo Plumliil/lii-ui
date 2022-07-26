@@ -3,7 +3,7 @@ import LiiUI from '../packages';
 import { Message } from '../packages';
 import App from './App.vue'
 import router from './router/index.js'
-// import '../src/assets/styles/global.less'
+import '../src/assets/styles/global.less'
 const app=createApp(App);
 
 app.use(LiiUI)

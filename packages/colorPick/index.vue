@@ -1,5 +1,5 @@
 <template>
-    <div class="colorPick">
+    <div class="lii-colorPick">
         
     </div>
 </template>
@@ -20,8 +20,8 @@ const props=defineProps({
 })
 </script>
 
-<style lang='less' scoped >
-.colorPick {
+<style lang='less'>
+.lii-colorPick {
     width: 300px;
     height: 300px;
   /* 色相：从左到右依次为 红、黄、绿、青、蓝、洋红，等分渐变 */

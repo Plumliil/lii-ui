@@ -11,7 +11,8 @@ export default [{
             {
                 path: '/init',
                 name: '安装使用',
-                component: () => import('../../views/init.vue')
+                // component: () => import('../../views/init.vue')
+                component: () => import('/packages/init/doc/doc.md')
             },
             {
                 path: '/button',
@@ -25,7 +26,7 @@ export default [{
             },
             {
                 path: '/space',
-                name: 'space 间距',
+                name: 'Space 间距',
                 component: () => import('/packages/space/doc/doc.md')
             },
             {

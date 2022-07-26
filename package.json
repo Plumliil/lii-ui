@@ -1,10 +1,10 @@
 {
   "name": "lii-ui",
   "private": false,
-  "version": "0.0.4",
+  "version": "0.0.6",
   "author": "plumli",
   "license": "ISC",
-  "description": "A lightweight component library",
+  "description": "A lightweight component library based on vue3",
   "main": "./dist/lii-ui.umd.js",
   "module": "./dist/lii-ui.es.js",
   "exports": {
@@ -30,7 +30,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "js-beautify": "^1.14.3",
     "less": "^4.1.2",
     "vite-plugin-md": "^0.12.4",
     "vue": "^3.2.25",

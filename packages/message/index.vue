@@ -61,7 +61,7 @@ const classs = computed(() => [
 ]);
 </script>
 
-<style lang='less' scoped>
+<style lang='less'>
 .lii-message {
   position: fixed;
   top: 20px;
