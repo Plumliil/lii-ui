@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="lii-collapse">
         <slot>
 
         </slot>
@@ -7,26 +7,30 @@
 </template>
 
 <script>
-import { provide } from '@vue/runtime-core';
-import { ref } from 'vue';
-export default {
-  name: 'liiCollapse',
-}
+    import {
+        provide
+    } from '@vue/runtime-core';
+    import {
+        ref
+    } from 'vue';
+    export default {
+        name: 'liiCollapse',
+    }
 </script>
 <script setup>
-const props=defineProps({
-    value:{
-        type:Array,
-        default:[]
-    }
-})
-const PARENT_PROVIDE='parentProvide';
-provide(PARENT_PROVIDE,props);
+    const props = defineProps({
+        value: {
+            type: Array,
+            default: []
+        }
+    })
+    const PARENT_PROVIDE = 'parentProvide';
+    provide(PARENT_PROVIDE, props);
 </script>
 
-<style lang='less' scoped >
-*{
-    margin: 0;
-    padding: 0;
-}
+<style lang='less'>
+    .lii-collapse {
+        padding: 0;
+        margin: 0;
+    }
 </style>

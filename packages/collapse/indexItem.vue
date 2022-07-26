@@ -1,5 +1,5 @@
 <template>
-  <div id="collapse-item">
+  <div class="lii-collapse-item">
     <div class="header" @click="changeActive(name)">
       <h4 :class="[{activeB:isShow},{activeD:true}]">{{title}}</h4>
     </div>
@@ -41,8 +41,8 @@
   }
 </script>
 
-<style lang='less' scoped>
-  #collapse-item {
+<style lang='less' >
+  .lii-collapse-item {
     // border: 1px solid black;
     margin: 3px 0;
 
@@ -66,18 +66,21 @@
         width: 100%;
         line-height: 40px;
       }
-      .activeD::after{
-        content:'🞂';
+
+      .activeD::after {
+        content: '🞂';
         font-size: 15px;
         position: absolute;
         right: 10px;
       }
-      .activeB::after{
-        content:'⏷';
+
+      .activeB::after {
+        content: '⏷';
         font-size: 15px;
         position: absolute;
         right: 10px;
       }
+
       // .activeA::after{
       //   content:'>';
       //   font-size: 15px;
@@ -90,15 +93,15 @@
       padding: 10px;
       line-height: 30px;
     }
-  }
 
-  .fade-enter-active,
-  .fade-leave-active {
-    transition: opacity 0.5s ease;
-  }
+    .fade-enter-active,
+    .fade-leave-active {
+      transition: opacity 0.5s ease;
+    }
 
-  .fade-enter-from,
-  .fade-leave-to {
-    opacity: 0;
+    .fade-enter-from,
+    .fade-leave-to {
+      opacity: 0;
+    }
   }
 </style>
