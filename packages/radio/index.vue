@@ -78,7 +78,7 @@ const change = (item, index) => {
 };
 </script>
 
-<style lang='less' scoped>
+<style lang='less'>
 .lii-radio {
   width: 100%;
   height: auto;
