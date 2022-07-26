@@ -80,7 +80,7 @@
     console.log(loaderClass);
 </script>
 
-<style lang='less' scoped>
+<style lang='less'>
     .lii-loader {
         display: flex;
         justify-content: center;
