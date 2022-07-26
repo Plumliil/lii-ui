@@ -1,5 +1,5 @@
 <template>
-    <div class="liiProgress">
+    <div class="liiProgress" :style="{width:width+'px'}">
         <div :class="liiProgressBar" :style="{'width':percentage+'%','background-color':colorChange}">
             <p v-if="showText" :class="percentText">{{props.percentage+'%'}}</p>
         </div>
@@ -62,6 +62,10 @@
         value: {
             type: Array,
             default: []
+        },
+        width: {
+            type: Number,
+            default: 500
         }
     })
     let liiProgressBar = reactive([]);
@@ -106,7 +110,7 @@
     }
 
     if (props.color) {
-        colorChange =props.color;
+        colorChange = props.color;
     } else if (props.colors) {
         props.colors.forEach(item => {
             if (props.percentage >= item.percentage) {
@@ -114,15 +118,9 @@
             }
         })
     }
-    console.log(props.color);
 </script>
 
-<style lang='less' scoped>
-    * {
-        margin: 0;
-        padding: 0;
-    }
-
+<style lang='less'>
     .liiProgress {
         position: relative;
         width: 500px;
@@ -130,21 +128,43 @@
         border: @baseBorder;
         border-radius: 30px;
         margin: 20px 0px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
 
         .liiProgress-bar {
-            width: 0;
             height: 6px;
             background-color: @primary;
             text-align: center;
             border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
             .liiProgress-bar-textOutside {
                 position: absolute;
                 right: -55px;
-                top: -10px;
+                text-align: right;
+                line-height: 6px;
             }
 
+            .liiProgress-bar-textOutside-type1 {
+                position: absolute;
+                right: -55px;
+                text-align: right;
+                line-height: 6px;
+            }
+
+            .liiProgress-bar-textOutside-type2 {
+                text-align: right;
+                margin-right: -55px;
+                line-height: 6px;
+            }
+
+
             .liiProgress-bar-textInside {
+                width: 100%;
+                background-color: red;
                 position: absolute;
                 right: -55px;
                 top: -10px;
@@ -152,15 +172,14 @@
         }
 
         .liiProgress-bar-progressText {
+            width: 100%;
             height: 30px;
-            width: 0;
             border-radius: 20px;
             // margin: 20px 0;
             line-height: 30px;
             color: white;
             font-weight: 700;
             text-align: right;
-            margin-right: 30px;
 
         }
 
