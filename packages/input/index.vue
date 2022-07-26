@@ -42,7 +42,7 @@ const input = (e) => {
   emits("update:modelValue", e.target.value);
 };
 </script>
-<style lang='less' scoped>
+<style lang='less'>
 .lii-input {
   background-color: #fff;
   background-image: none;
