@@ -5,6 +5,12 @@ import liiSpace from "./space";
 import liiSelect from "./select";
 import liiRadio from "./radio";
 import Message from "./message";
+import liiCollapse from './collapse';
+import liiProgress from './progress';
+import liiBadge from './badge';
+import liiLoading from './loading';
+import liiUpload from './upload';
+
 const components = [
     liiButton,
     liiInput,
@@ -12,6 +18,13 @@ const components = [
     liiTextarea,
     liiSelect,
     liiRadio,
+    liiCollapse,
+    liiProgress,
+    liiBadge,
+    liiLoading,
+    liiUpload
+
+    
 ];
 const plugins = [
     Message,
@@ -34,6 +47,11 @@ export {
     liiTextarea,
     liiSelect,
     liiRadio,
-    Message
+    Message,
+    liiCollapse,
+    liiProgress,
+    liiBadge,
+    liiLoading,
+    liiUpload
 }
 export default LiiUI;
