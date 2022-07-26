@@ -36,24 +36,28 @@
     return btnClassArr;
   });
 </script>
-<style lang='less' scoped>
+<style lang='less'>
   .lii-button {
     display: inline-block;
     cursor: pointer;
     white-space: nowrap;
     background-color: #ffffff;
     outline: none;
-    padding: 12px 20px;
+    width: 100px;
+    height: 50px;
+    padding: 3px 5px;
+
     border: 1px solid #dcdfe6;
     border-radius: 3px;
     transition: 0.1s;
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
     margin: 5px;
 
     &.lii-big-button {
-      padding: 14.4px 24px;
-      font-size: 16.8px;
+      width: 120px;
+      height: 60px;
+      font-size: 19.2px;
     }
 
     &.lii-mid-button {
@@ -61,13 +65,17 @@
     }
 
     &.lii-small-button {
-      padding: 8.4px 14px;
-      font-size: 9.8px;
+      // padding: 8.4px 14px;
+      width: 80px;
+      height: 40px;
+      font-size: 12.8px;
     }
 
     &.lii-mini-button {
-      padding: 6px 10px;
-      font-size: 7px;
+      // padding: 6px 10px;
+      width: 60px;
+      height: 30px;
+      font-size: 9.6px;
     }
 
     &:focus,
@@ -90,8 +98,8 @@
 
     // is-circle圆形
     &.is-circle {
-      width: 40px;
-      height: 40px;
+      width: 50px;
+      height: 50px;
       padding: 0;
       border-radius: 50%;
     }
