@@ -57,7 +57,7 @@ export default {
 
 
 
-<style lang='less' scoped>
+<style lang='less'>
 .lii-space {
   width: 100%;
   flex-wrap: wrap;
