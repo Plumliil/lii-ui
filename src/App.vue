@@ -9,8 +9,9 @@
       <a href="">首页</a>
       <router-link to="init">开始</router-link>
       <router-link to="logs">更新日志</router-link>
-      <a href="">问题反馈</a>
-      <a href="https://github.com/Plumliil/lii-ui">
+      <a href="https://github.com/Plumliil/lii-ui/issues">问题反馈</a>
+      <!-- <a hre></a> -->
+      <a href="https://github.com/Plumliil/lii-ui" target="_blank">
         <img src="./assets/imgs/github.png" style="width: 40px; height: 40px" alt="" />
       </a>
     </div>
