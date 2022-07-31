@@ -1,50 +1,28 @@
 {
-  "name": "lii-ui",
-  "private": false,
-  "version": "0.0.6",
-  "author": "plumli",
-  "license": "ISC",
-  "description": "A lightweight component library based on vue3",
-  "main": "./dist/lii-ui.umd.js",
-  "module": "./dist/lii-ui.es.js",
-  "exports": {
-    ".": {
-      "import": "./dist/lii-ui.es.js",
-      "require": "./dist/lii-ui.umd.js"
-    },
-    "./dist/style.css": {
-      "import": "./dist/style.css",
-      "require": "./dist/style.css"
-    }
-  },
-  "files": [
-    "dist"
-  ],
-  "keywords": [
-    "vue3",
-    "ui框架"
-  ],
+  "name": "liiui",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "docs:serve": "vuepress serve docs"
   },
   "dependencies": {
-    "less": "^4.1.2",
-    "vite-plugin-md": "^0.12.4",
-    "vue": "^3.2.25",
-    "vue-router": "^4.0.14"
+    "lii-ui": "^0.0.6",
+    "vue": "^3.2.37"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^2.3.1",
-    "vite": "^2.9.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Plumliil/lii-ui.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Plumliil/lii-ui/issues"
-  },
-  "homepage": "https://github.com/Plumliil/lii-ui#readme"
+    "@vitejs/plugin-vue": "^3.0.0",
+    "@vuepress/bundler-vite": "^2.0.0-beta.49",
+    "@vuepress/plugin-container": "^2.0.0-beta.49",
+    "@vuepress/plugin-search": "^2.0.0-beta.49",
+    "vite": "^3.0.0",
+    "vuepress": "^2.0.0-beta.49",
+    "vuepress-plugin-demo-container": "^0.2.0",
+    "vuepress-plugin-demo-container-v2": "^2.3.4"
+  }
 }
