@@ -24,11 +24,11 @@
     placeholder: String,
     rows: {
       type: Number,
-      default: 4,
+      default: 6,
     },
     cols: {
       type: Number,
-      default: 30,
+      default: 40,
     },
     resize: {
       type: Boolean,
