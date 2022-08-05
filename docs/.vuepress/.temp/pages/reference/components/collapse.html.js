@@ -1,4 +1,4 @@
-export const data = JSON.parse("{\"key\":\"v-7aa4dd10\",\"path\":\"/reference/components/collapse.html\",\"title\":\"collapse 手风琴\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"excerpt\":\"\",\"headers\":[],\"git\":{},\"filePathRelative\":\"reference/components/collapse.md\"}")
+export const data = JSON.parse("{\"key\":\"v-7aa4dd10\",\"path\":\"/reference/components/collapse.html\",\"title\":\"collapse 手风琴\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"excerpt\":\"\",\"headers\":[{\"level\":2,\"title\":\"基本用法\",\"slug\":\"基本用法\",\"children\":[]}],\"git\":{\"updatedTime\":1659284260000},\"filePathRelative\":\"reference/components/collapse.md\"}")
 
 if (import.meta.webpackHot) {
   import.meta.webpackHot.accept()
