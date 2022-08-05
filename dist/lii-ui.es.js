@@ -64,8 +64,8 @@ const _sfc_main$b = /* @__PURE__ */ Object.assign(__default__$a, {
     };
   }
 });
-_sfc_main$b.install = (app) => {
-  app.component(_sfc_main$b.name, _sfc_main$b);
+_sfc_main$b.install = (app2) => {
+  app2.component(_sfc_main$b.name, _sfc_main$b);
 };
 var index_vue_vue_type_style_index_0_lang$a = "";
 const _hoisted_1$8 = ["value", "disabled", "placeholder"];
@@ -111,8 +111,8 @@ const _sfc_main$a = /* @__PURE__ */ Object.assign(__default__$9, {
     };
   }
 });
-_sfc_main$a.install = (app) => {
-  app.component(_sfc_main$a.name, _sfc_main$a);
+_sfc_main$a.install = (app2) => {
+  app2.component(_sfc_main$a.name, _sfc_main$a);
 };
 var index_vue_vue_type_style_index_0_lang$9 = "";
 const _hoisted_1$7 = ["cols", "rows", "resize", "value", "disabled", "readonly", "maxlength", "placeholder"];
@@ -129,11 +129,11 @@ const _sfc_main$9 = /* @__PURE__ */ Object.assign(__default__$8, {
     placeholder: String,
     rows: {
       type: Number,
-      default: 4
+      default: 6
     },
     cols: {
       type: Number,
-      default: 30
+      default: 40
     },
     resize: {
       type: Boolean,
@@ -196,8 +196,8 @@ const _sfc_main$9 = /* @__PURE__ */ Object.assign(__default__$8, {
     };
   }
 });
-_sfc_main$9.install = (app) => {
-  app.component(_sfc_main$9.name, _sfc_main$9);
+_sfc_main$9.install = (app2) => {
+  app2.component(_sfc_main$9.name, _sfc_main$9);
 };
 var index_vue_vue_type_style_index_0_lang$8 = "";
 var _export_sfc = (sfc, props) => {
@@ -248,8 +248,8 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("div", _hoisted_1$6);
 }
 var liiSpace = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["render", _sfc_render]]);
-liiSpace.install = (app) => {
-  app.component(liiSpace.name, liiSpace);
+liiSpace.install = (app2) => {
+  app2.component(liiSpace.name, liiSpace);
 };
 var index_vue_vue_type_style_index_0_lang$7 = "";
 const _hoisted_1$5 = { class: "lii-select" };
@@ -359,8 +359,8 @@ const _sfc_main$7 = /* @__PURE__ */ Object.assign(__default__$7, {
     };
   }
 });
-_sfc_main$7.install = (app) => {
-  app.component(_sfc_main$7.name, _sfc_main$7);
+_sfc_main$7.install = (app2) => {
+  app2.component(_sfc_main$7.name, _sfc_main$7);
 };
 var index_vue_vue_type_style_index_0_lang$6 = "";
 const _hoisted_1$4 = { class: "lii-radio" };
@@ -447,8 +447,8 @@ const _sfc_main$6 = /* @__PURE__ */ Object.assign(__default__$6, {
     };
   }
 });
-_sfc_main$6.install = (app) => {
-  app.component(_sfc_main$6.name, _sfc_main$6);
+_sfc_main$6.install = (app2) => {
+  app2.component(_sfc_main$6.name, _sfc_main$6);
 };
 var index_vue_vue_type_style_index_0_lang$5 = "";
 const __default__$5 = {
@@ -530,8 +530,8 @@ function Message(options) {
   render(vm, container);
   document.body.appendChild(container.firstElementChild);
 }
-Message.install = (app) => {
-  app.config.globalProperties.$message = Message;
+Message.install = (app2) => {
+  app2.config.globalProperties.$message = Message;
 };
 function makeMap(str, expectsLowerCase) {
   const map = /* @__PURE__ */ Object.create(null);
@@ -1293,8 +1293,8 @@ const _sfc_main$4 = /* @__PURE__ */ Object.assign(__default__$4, {
     };
   }
 });
-_sfc_main$4.install = (app) => {
-  app.component(_sfc_main$4.name, _sfc_main$4);
+_sfc_main$4.install = (app2) => {
+  app2.component(_sfc_main$4.name, _sfc_main$4);
 };
 var index_vue_vue_type_style_index_0_lang$3 = "";
 const __default__$3 = {
@@ -1409,8 +1409,8 @@ const _sfc_main$3 = /* @__PURE__ */ Object.assign(__default__$3, {
     };
   }
 });
-_sfc_main$3.install = (app) => {
-  app.component(_sfc_main$3.name, _sfc_main$3);
+_sfc_main$3.install = (app2) => {
+  app2.component(_sfc_main$3.name, _sfc_main$3);
 };
 var index_vue_vue_type_style_index_0_lang$2 = "";
 const _hoisted_1$2 = {
@@ -1471,8 +1471,8 @@ const _sfc_main$2 = /* @__PURE__ */ Object.assign(__default__$2, {
     };
   }
 });
-_sfc_main$2.install = (app) => {
-  app.component(_sfc_main$2.name, _sfc_main$2);
+_sfc_main$2.install = (app2) => {
+  app2.component(_sfc_main$2.name, _sfc_main$2);
 };
 var index_vue_vue_type_style_index_0_lang$1 = "";
 const _hoisted_1$1 = { class: "lii-loader" };
@@ -1563,8 +1563,8 @@ const _sfc_main$1 = /* @__PURE__ */ Object.assign(__default__$1, {
     };
   }
 });
-_sfc_main$1.install = (app) => {
-  app.component(_sfc_main$1.name, _sfc_main$1);
+_sfc_main$1.install = (app2) => {
+  app2.component(_sfc_main$1.name, _sfc_main$1);
 };
 var index_vue_vue_type_style_index_0_lang = "";
 const _hoisted_1 = { class: "lii-upload" };
@@ -1675,9 +1675,112 @@ const _sfc_main = /* @__PURE__ */ Object.assign(__default__, {
     };
   }
 });
-_sfc_main.install = (app) => {
-  app.component(_sfc_main.name, _sfc_main);
+_sfc_main.install = (app2) => {
+  app2.component(_sfc_main.name, _sfc_main);
 };
+app.directive("copy", {
+  beforeMount(el, {
+    value,
+    arg
+  }) {
+    el.targetContent = value;
+    const success = arg;
+    el.addEventListener("click", () => {
+      if (!el.targetContent && !el.textContent)
+        return console.warn("\u6CA1\u6709\u9700\u8981\u590D\u5236\u7684\u76EE\u6807\u5185\u5BB9");
+      const textarea = document.createElement("textarea");
+      textarea.readOnly = "readonly";
+      textarea.style.position = "fixed";
+      textarea.style.top = "-99999px";
+      textarea.value = el.targetContent || el.textContent;
+      document.body.appendChild(textarea);
+      textarea.select();
+      const res = document.execCommand("Copy");
+      res && console.log("\u590D\u5236\u6210\u529F\uFF0C\u526A\u8D34\u677F\u5185\u5BB9\uFF1A" + value || el.textContent);
+      res && success ? success(el.targetContent || el.textContent) : console.log("\u590D\u5236\u6210\u529F\uFF0C\u526A\u8D34\u677F\u5185\u5BB9\uFF1A" + el.targetContent || el.textContent);
+      document.body.removeChild(textarea);
+    }, true);
+  },
+  updated(el, {
+    value
+  }) {
+    el.targetContent = value;
+  },
+  unmounted(el) {
+    el.removeEventListener("click", () => {
+    });
+  }
+});
+app.directive("lazy-img", {
+  beforeMount(el, {
+    value
+  }) {
+    el.lii_data_src = value;
+  },
+  mounted(el, {
+    value
+  }) {
+    loadImg(el);
+    window.addEventListener("scroll", () => {
+      loadImg(el);
+    });
+  },
+  updated(el, {
+    value
+  }) {
+    el.lii_data_src = value;
+  },
+  unmounted(el) {
+    el.lii_io.disconnect();
+  }
+});
+function loadImg(el) {
+  const clientHeight = getClientHight();
+  const {
+    top,
+    bottom
+  } = el.getBoundingClientRect();
+  const realSrc = el.lii_data_src;
+  top < clientHeight && bottom > 0 && realSrc && (el.src = realSrc);
+}
+function getClientHight() {
+  const dClientHeight = document.documentElement.clientHeight;
+  const bodyClientHeight = document.body.clientHeight;
+  let clientHeight = 0;
+  if (bodyClientHeight && dClientHeight) {
+    clientHeight = bodyClientHeight < dClientHeight ? bodyClientHeight : dClientHeight;
+  } else {
+    clientHeight = bodyClientHeight > dClientHeight ? bodyClientHeight : dClientHeight;
+  }
+  return clientHeight;
+}
+app.directive("replace-img", {
+  async beforeMount(el, {
+    value
+  }) {
+    const imgUrl = value;
+    if (imgUrl) {
+      const exist = await imgIsExist(imgUrl);
+      exist && el.setAttribute("src", imgUrl);
+    }
+    function imgIsExist(url) {
+      return new Promise((resolve) => {
+        let img = new Image();
+        img.src = url;
+        img.onload = () => {
+          if (img.complete) {
+            resolve(true);
+            img = null;
+          }
+        };
+        img.onerror = () => {
+          resolve(false);
+          img = null;
+        };
+      });
+    }
+  }
+});
 const components = [
   _sfc_main$b,
   _sfc_main$a,
@@ -1694,12 +1797,12 @@ const components = [
 const plugins = [
   Message
 ];
-const install = (app) => {
+const install = (app2) => {
   components.forEach((component) => {
-    app.use(component);
+    app2.use(component);
   });
   plugins.forEach((plugin) => {
-    app.use(plugin);
+    app2.use(plugin);
   });
 };
 const LiiUI = {
