@@ -14,8 +14,15 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "安装",
-    "headers": [],
+    "title": "安装使用",
+    "headers": [
+      {
+        "level": 2,
+        "title": "npm 安装",
+        "slug": "npm-安装",
+        "children": []
+      }
+    ],
     "path": "/guide/init.html",
     "pathLocale": "/",
     "extraFields": []
@@ -29,7 +36,14 @@ export const searchIndex = [
   },
   {
     "title": "快速上手",
-    "headers": [],
+    "headers": [
+      {
+        "level": 2,
+        "title": "引入 Lii",
+        "slug": "引入-lii",
+        "children": []
+      }
+    ],
     "path": "/guide/start.html",
     "pathLocale": "/",
     "extraFields": []
@@ -54,6 +68,12 @@ export const searchIndex = [
         "level": 2,
         "title": "其他用法",
         "slug": "其他用法",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "属性",
+        "slug": "属性",
         "children": []
       }
     ],

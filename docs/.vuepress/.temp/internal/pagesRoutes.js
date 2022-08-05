@@ -1,7 +1,7 @@
 export const pagesRoutes = [
   ["v-8daa1a0e","/",{"title":""},["/index.html","/README.md"]],
   ["v-fffb8e28","/guide/",{"title":"这里是guide目录"},["/guide/index.html","/guide/README.md"]],
-  ["v-d6c4d346","/guide/init.html",{"title":"安装"},["/guide/init","/guide/init.md"]],
+  ["v-d6c4d346","/guide/init.html",{"title":"安装使用"},["/guide/init","/guide/init.md"]],
   ["v-4eaf9f84","/guide/page.html",{"title":"这里是page页面"},["/guide/page","/guide/page.md"]],
   ["v-621628ba","/guide/start.html",{"title":"快速上手"},["/guide/start","/guide/start.md"]],
   ["v-6dc3b5bc","/reference/components/",{"title":"plugin readme"},["/reference/components/index.html","/reference/components/README.md"]],
