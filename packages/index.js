@@ -11,6 +11,11 @@ import liiBadge from './badge';
 import liiLoading from './loading';
 import liiUpload from './upload';
 
+// directives
+import './directives/copy'
+import './directives/img_lazy'
+import './directives/img_replace'
+
 const components = [
     liiButton,
     liiInput,
