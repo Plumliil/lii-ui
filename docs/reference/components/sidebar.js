@@ -50,12 +50,12 @@ module.exports = [{
             "/reference/components/radio",
         ]
     },
-    {
-        collapsable: true,
-        children: [
-            "/reference/components/collapse",
-        ]
-    },
+    // {
+    //     collapsable: true,
+    //     children: [
+    //         "/reference/components/collapse",
+    //     ]
+    // },
     {
         collapsable: true,
         children: [
