@@ -4,9 +4,6 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "docs:serve": "vuepress serve docs"
@@ -20,7 +17,6 @@
     "@vuepress/bundler-vite": "^2.0.0-beta.49",
     "@vuepress/plugin-container": "^2.0.0-beta.49",
     "@vuepress/plugin-search": "^2.0.0-beta.49",
-    "vite": "^3.0.0",
     "vuepress": "^2.0.0-beta.49",
     "vuepress-plugin-demo-container": "^0.2.0",
     "vuepress-plugin-demo-container-v2": "^2.3.4"

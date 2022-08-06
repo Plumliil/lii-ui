@@ -7,8 +7,15 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "这里是guide目录",
-    "headers": [],
+    "title": "",
+    "headers": [
+      {
+        "level": 2,
+        "title": "在本网站能看到什么...",
+        "slug": "在本网站能看到什么",
+        "children": []
+      }
+    ],
     "path": "/guide/",
     "pathLocale": "/",
     "extraFields": []
@@ -28,9 +35,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "这里是page页面",
+    "title": "注意",
     "headers": [],
-    "path": "/guide/page.html",
+    "path": "/guide/notice.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -351,12 +358,6 @@ export const searchIndex = [
         "title": "基本用法",
         "slug": "基本用法",
         "children": []
-      },
-      {
-        "level": 2,
-        "title": "禁止状态",
-        "slug": "禁止状态",
-        "children": []
       }
     ],
     "path": "/reference/components/upload.html",
@@ -371,23 +372,94 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "plugin one",
-    "headers": [],
-    "path": "/reference/directives/one.html",
+    "title": "v-copy",
+    "headers": [
+      {
+        "level": 2,
+        "title": "介绍",
+        "slug": "介绍",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "用法",
+        "slug": "用法",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "代码",
+        "slug": "代码",
+        "children": []
+      }
+    ],
+    "path": "/reference/directives/v_copy.html",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "plugin three",
-    "headers": [],
-    "path": "/reference/directives/three.html",
+    "title": "v-focus",
+    "headers": [
+      {
+        "level": 2,
+        "title": "用法",
+        "slug": "用法",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "代码",
+        "slug": "代码",
+        "children": []
+      }
+    ],
+    "path": "/reference/directives/v_focus.html",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "plugin two",
-    "headers": [],
-    "path": "/reference/directives/two.html",
+    "title": "v-lazy-img",
+    "headers": [
+      {
+        "level": 2,
+        "title": "介绍",
+        "slug": "介绍",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "用法",
+        "slug": "用法",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "代码",
+        "slug": "代码",
+        "children": []
+      }
+    ],
+    "path": "/reference/directives/v_lazy_img.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "v-replace-img",
+    "headers": [
+      {
+        "level": 2,
+        "title": "用法",
+        "slug": "用法",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "代码",
+        "slug": "代码",
+        "children": []
+      }
+    ],
+    "path": "/reference/directives/v_replace_img.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -416,6 +488,27 @@ export const searchIndex = [
     "title": "plugin two",
     "headers": [],
     "path": "/reference/plugins/two.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "v-copy",
+    "headers": [],
+    "path": "/reference/plugins/v-lazy-img.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "",
+    "headers": [],
+    "path": "/reference/plugins/v-replace-img.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "v-copy",
+    "headers": [],
+    "path": "/reference/plugins/v_copy.html",
     "pathLocale": "/",
     "extraFields": []
   },

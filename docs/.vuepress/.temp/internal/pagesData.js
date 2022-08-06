@@ -5,8 +5,8 @@ export const pagesData = {
   "v-fffb8e28": () => import(/* webpackChunkName: "v-fffb8e28" */"/home/Plumli/Desktop/lii-ui-docs/docs/.vuepress/.temp/pages/guide/index.html.js").then(({ data }) => data),
   // path: /guide/init.html
   "v-d6c4d346": () => import(/* webpackChunkName: "v-d6c4d346" */"/home/Plumli/Desktop/lii-ui-docs/docs/.vuepress/.temp/pages/guide/init.html.js").then(({ data }) => data),
-  // path: /guide/page.html
-  "v-4eaf9f84": () => import(/* webpackChunkName: "v-4eaf9f84" */"/home/Plumli/Desktop/lii-ui-docs/docs/.vuepress/.temp/pages/guide/page.html.js").then(({ data }) => data),
+  // path: /guide/notice.html
+  "v-d97526d6": () => import(/* webpackChunkName: "v-d97526d6" */"/home/Plumli/Desktop/lii-ui-docs/docs/.vuepress/.temp/pages/guide/notice.html.js").then(({ data }) => data),
   // path: /guide/start.html
   "v-621628ba": () => import(/* webpackChunkName: "v-621628ba" */"/home/Plumli/Desktop/lii-ui-docs/docs/.vuepress/.temp/pages/guide/start.html.js").then(({ data }) => data),
   // path: /reference/components/
@@ -35,12 +35,14 @@ export const pagesData = {
   "v-30fd2f88": () => import(/* webpackChunkName: "v-30fd2f88" */"/home/Plumli/Desktop/lii-ui-docs/docs/.vuepress/.temp/pages/reference/components/upload.html.js").then(({ data }) => data),
   // path: /reference/directives/
   "v-4747148e": () => import(/* webpackChunkName: "v-4747148e" */"/home/Plumli/Desktop/lii-ui-docs/docs/.vuepress/.temp/pages/reference/directives/index.html.js").then(({ data }) => data),
-  // path: /reference/directives/one.html
-  "v-1b8b48c1": () => import(/* webpackChunkName: "v-1b8b48c1" */"/home/Plumli/Desktop/lii-ui-docs/docs/.vuepress/.temp/pages/reference/directives/one.html.js").then(({ data }) => data),
-  // path: /reference/directives/three.html
-  "v-4c9ba909": () => import(/* webpackChunkName: "v-4c9ba909" */"/home/Plumli/Desktop/lii-ui-docs/docs/.vuepress/.temp/pages/reference/directives/three.html.js").then(({ data }) => data),
-  // path: /reference/directives/two.html
-  "v-1019b49b": () => import(/* webpackChunkName: "v-1019b49b" */"/home/Plumli/Desktop/lii-ui-docs/docs/.vuepress/.temp/pages/reference/directives/two.html.js").then(({ data }) => data),
+  // path: /reference/directives/v_copy.html
+  "v-08ff0ea6": () => import(/* webpackChunkName: "v-08ff0ea6" */"/home/Plumli/Desktop/lii-ui-docs/docs/.vuepress/.temp/pages/reference/directives/v_copy.html.js").then(({ data }) => data),
+  // path: /reference/directives/v_focus.html
+  "v-ac2b1c10": () => import(/* webpackChunkName: "v-ac2b1c10" */"/home/Plumli/Desktop/lii-ui-docs/docs/.vuepress/.temp/pages/reference/directives/v_focus.html.js").then(({ data }) => data),
+  // path: /reference/directives/v_lazy_img.html
+  "v-1dd2d5ec": () => import(/* webpackChunkName: "v-1dd2d5ec" */"/home/Plumli/Desktop/lii-ui-docs/docs/.vuepress/.temp/pages/reference/directives/v_lazy_img.html.js").then(({ data }) => data),
+  // path: /reference/directives/v_replace_img.html
+  "v-bc718450": () => import(/* webpackChunkName: "v-bc718450" */"/home/Plumli/Desktop/lii-ui-docs/docs/.vuepress/.temp/pages/reference/directives/v_replace_img.html.js").then(({ data }) => data),
   // path: /reference/plugins/
   "v-0964298c": () => import(/* webpackChunkName: "v-0964298c" */"/home/Plumli/Desktop/lii-ui-docs/docs/.vuepress/.temp/pages/reference/plugins/index.html.js").then(({ data }) => data),
   // path: /reference/plugins/one.html
@@ -49,6 +51,12 @@ export const pagesData = {
   "v-67591887": () => import(/* webpackChunkName: "v-67591887" */"/home/Plumli/Desktop/lii-ui-docs/docs/.vuepress/.temp/pages/reference/plugins/three.html.js").then(({ data }) => data),
   // path: /reference/plugins/two.html
   "v-4c6e28ce": () => import(/* webpackChunkName: "v-4c6e28ce" */"/home/Plumli/Desktop/lii-ui-docs/docs/.vuepress/.temp/pages/reference/plugins/two.html.js").then(({ data }) => data),
+  // path: /reference/plugins/v-lazy-img.html
+  "v-32ba150c": () => import(/* webpackChunkName: "v-32ba150c" */"/home/Plumli/Desktop/lii-ui-docs/docs/.vuepress/.temp/pages/reference/plugins/v-lazy-img.html.js").then(({ data }) => data),
+  // path: /reference/plugins/v-replace-img.html
+  "v-c26d761c": () => import(/* webpackChunkName: "v-c26d761c" */"/home/Plumli/Desktop/lii-ui-docs/docs/.vuepress/.temp/pages/reference/plugins/v-replace-img.html.js").then(({ data }) => data),
+  // path: /reference/plugins/v_copy.html
+  "v-3870f8ef": () => import(/* webpackChunkName: "v-3870f8ef" */"/home/Plumli/Desktop/lii-ui-docs/docs/.vuepress/.temp/pages/reference/plugins/v_copy.html.js").then(({ data }) => data),
   // path: /404.html
   "v-3706649a": () => import(/* webpackChunkName: "v-3706649a" */"/home/Plumli/Desktop/lii-ui-docs/docs/.vuepress/.temp/pages/404.html.js").then(({ data }) => data),
 }

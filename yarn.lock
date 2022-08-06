@@ -871,7 +871,7 @@ esbuild-windows-arm64@0.14.51:
   resolved "https://registry.yarnpkg.com/esbuild-windows-arm64/-/esbuild-windows-arm64-0.14.51.tgz#0220d2304bfdc11bc27e19b2aaf56edf183e4ae9"
   integrity sha512-JQDqPjuOH7o+BsKMSddMfmVJXrnYZxXDHsoLHc0xgmAZkOOCflRmC43q31pk79F9xuyWY45jDBPolb5ZgGOf9g==
 
-esbuild@^0.14.27, esbuild@^0.14.47, esbuild@^0.14.49:
+esbuild@^0.14.27, esbuild@^0.14.49:
   version "0.14.51"
   resolved "https://registry.npmjs.org/esbuild/-/esbuild-0.14.51.tgz"
   integrity sha512-+CvnDitD7Q5sT7F+FM65sWkF8wJRf+j9fPcprxYV4j+ohmzVj2W7caUqH2s5kCaCJAfcAICjSlKhDCcvDpU7nw==
@@ -1441,7 +1441,7 @@ readdirp@~3.6.0:
   dependencies:
     picomatch "^2.2.1"
 
-resolve@^1.22.0, resolve@^1.22.1:
+resolve@^1.22.0:
   version "1.22.1"
   resolved "https://registry.npmjs.org/resolve/-/resolve-1.22.1.tgz"
   integrity sha512-nBpuuYuY5jFsli/JIs1oldw6fOQCBioohqWZg/2hiaOybXOft4lonv85uDOKXdf8rhyK159cxU5cDcK/NKk8zw==
@@ -1463,7 +1463,7 @@ reusify@^1.0.4:
   resolved "https://registry.npmjs.org/reusify/-/reusify-1.0.4.tgz"
   integrity sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==
 
-rollup@^2.59.0, rollup@^2.75.6, rollup@^2.76.0:
+rollup@^2.59.0, rollup@^2.76.0:
   version "2.77.2"
   resolved "https://registry.npmjs.org/rollup/-/rollup-2.77.2.tgz"
   integrity sha512-m/4YzYgLcpMQbxX3NmAqDvwLATZzxt8bIegO78FZLl+lAgKJBd1DRAOeEiZcKOIOPjxE6ewHWHNgGEalFXuz1g==
@@ -1648,18 +1648,6 @@ vite-plugin-md@^0.12.4:
     "@vue/runtime-core" "^3.2.31"
     gray-matter "^4.0.3"
     markdown-it "^12.3.2"
-
-vite@^3.0.0:
-  version "3.0.4"
-  resolved "https://registry.npmjs.org/vite/-/vite-3.0.4.tgz"
-  integrity sha512-NU304nqnBeOx2MkQnskBQxVsa0pRAH5FphokTGmyy8M3oxbvw7qAXts2GORxs+h/2vKsD+osMhZ7An6yK6F1dA==
-  dependencies:
-    esbuild "^0.14.47"
-    postcss "^8.4.14"
-    resolve "^1.22.1"
-    rollup "^2.75.6"
-  optionalDependencies:
-    fsevents "~2.3.2"
 
 vite@~2.9.14:
   version "2.9.14"
