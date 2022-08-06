@@ -6,16 +6,17 @@ const { searchPlugin } = require('@vuepress/plugin-search')
 
 module.exports=defineUserConfig({
     lang: 'zh-CN',
-    title: 'Lii-Ui',
-    description: '一套基于 Vue 3.0 的组件库',
+    title: 'Lii',
+    description: '组件库，不止组件库',
     head: [//额外的需要被注入到当前页面的 HTML <head> 中的标签
         ["link", { rel: "icon", href: "https://s2.loli.net/2022/04/05/qa4sCStuDX5gyBb.png" }],
         ["link", { rel: "stylesheet", href: "/css/style.css" }],    //自定义样式,也可以使用styles/index.styl来设置
         ["script", { charset: "utf-8", src: "/js/main.js" }],       //自定义js文件
     ],
-    theme: defaultTheme({// 主题设置
+    theme: defaultTheme({
+        // 主题设置
         logo: 'https://s2.loli.net/2022/04/05/qa4sCStuDX5gyBb.png',
-        repo: 'https://github.com/Plumliil/lii-ui',
+        repo: 'https://github.com/Plumliil',
         repoLabel: 'GitHub',
         navbar: require("./config/nav"),
         sidebar: require("./config/sidebar"),
@@ -50,7 +51,6 @@ module.exports=defineUserConfig({
     }),
     plugins: [
         searchPlugin(),
-        // containerPlugin(),
         'demo-container-v2',
         'demo-container'
       ],
