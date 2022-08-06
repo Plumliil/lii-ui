@@ -63,17 +63,17 @@ module.exports = [{
 
         ]
     },
-    {
-        collapsable: true,
-        children: [
-            "/reference/components/loading",
-        ]
-    },
-    {
-        collapsable: true,
-        children: [
-            "/reference/components/upload",
+    // {
+    //     collapsable: true,
+    //     children: [
+    //         "/reference/components/loading",
+    //     ]
+    // },
+    // {
+    //     collapsable: true,
+    //     children: [
+    //         "/reference/components/upload",
 
-        ]
-    },
+    //     ]
+    // },
 ];

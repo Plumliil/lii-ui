@@ -4,38 +4,38 @@
 展示信息条数
 
 <div>
-  <lii-badge value="1" class="item">
+  <lii-badge value="1">
     <lii-button size="mids">标记</lii-button>
   </lii-badge>
-  <lii-badge value="12" class="item">
+  <lii-badge value="12">
     <lii-button size="mids">标记</lii-button>
   </lii-badge>
-  <lii-badge value="12" class="item">
+  <lii-badge value="12">
     <lii-button size="small">标记</lii-button>
   </lii-badge>
-  <lii-badge value="12" class="item">
+  <lii-badge value="12">
     <lii-button size="mini">标记</lii-button>
   </lii-badge>
-  <lii-badge value="122" class="item">
+  <lii-badge value="122">
     <lii-button size="mini">标记</lii-button>
   </lii-badge>
 </div>
 
 ```vue
 <template>
-  <lii-badge value="1" class="item">
+  <lii-badge value="1">
     <lii-button size="mids">标记</lii-button>
   </lii-badge>
-  <lii-badge value="12" class="item">
+  <lii-badge value="12">
     <lii-button size="mids">标记</lii-button>
   </lii-badge>
-  <lii-badge value="12" class="item">
+  <lii-badge value="12">
     <lii-button size="small">标记</lii-button>
   </lii-badge>
-  <lii-badge value="12" class="item">
+  <lii-badge value="12">
     <lii-button size="mini">标记</lii-button>
   </lii-badge>
-  <lii-badge value="122" class="item">
+  <lii-badge value="122">
     <lii-button size="mini">标记</lii-button>
   </lii-badge>
 </template>
@@ -45,27 +45,27 @@
 其他标记值
 
 <div>
-    <lii-badge value="new" class="item">
+    <lii-badge value="new">
         <lii-button size="mini">标记</lii-button>
     </lii-badge>
-    <lii-badge value="hots" class="item">
+    <lii-badge value="hots">
       <lii-button size="mini">标记</lii-button>
     </lii-badge>
-    <lii-badge value="热门" class="item">
+    <lii-badge value="热门">
       <lii-button size="mini">标记</lii-button>
     </lii-badge>
 </div>
 
 ```vue
 <template>
-  <div class="demo1">
-    <lii-badge value="new" class="item">
+  <div>
+    <lii-badge value="new">
       <lii-button size="mini">标记</lii-button>
     </lii-badge>
-    <lii-badge value="hots" class="item">
+    <lii-badge value="hots">
       <lii-button size="mini">标记</lii-button>
     </lii-badge>
-    <lii-badge value="热门" class="item">
+    <lii-badge value="热门">
       <lii-button size="mini">标记</lii-button>
     </lii-badge>
   </div>
