@@ -1,11 +1,26 @@
 module.exports = [
     {
-        title: "插件",
+        title: "指令",
         collapsable: true,
+    },
+    {
         children: [
-            "/reference/plugins/one",
-            "/reference/plugins/two",
-            "/reference/plugins/three",
+            "/reference/directives/v_focus",
+        ]
+    },
+    {
+        children: [
+            "/reference/directives/v_copy",
+        ]
+    },
+    {
+        children: [
+            "/reference/directives/v_lazy_img",
+        ]
+    },
+    {
+        children: [
+            "/reference/directives/v_replace_img",
         ]
     },
 ];
