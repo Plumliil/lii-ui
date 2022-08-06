@@ -13,12 +13,11 @@ module.exports = [
             "/guide/start"
         ]
     },
-    // {
-    //     title: "开发指南",
-    //     collapsable: true,
-    //     children: [
-    //         "/guide/design/init",
-    //         "/guide/design/start"
-    //     ]
-    // },
+    {
+        title: "注意",
+        collapsable: true,
+        children: [
+            "/guide/notice"
+        ]
+    },
 ];
